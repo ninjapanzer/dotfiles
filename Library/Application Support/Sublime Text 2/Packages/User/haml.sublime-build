@@ -1,0 +1,5 @@
+{
+  "cmd": ["haml", "--trace", "$file", "${file_base_name}.html"],
+  "working_dir": "${file_path:${folder}}",
+  "selector": "source.haml"
+}

@@ -1,0 +1,27 @@
+*
+!/Library
+!/Library/Application Support
+!/Library/Application Support/Sublime Text 2
+!/Library/Application Support/Sublime Text 2/Packages
+!/Library/Application Support/Sublime Text 2/Packages/User
+!/Library/Application Support/Sublime Text 2/Packages/User/.SublimeREPLHistory
+!/Library/Application Support/Sublime Text 2/Packages/User/.SublimeREPLHistory/ruby.db
+!/Library/Application Support/Sublime Text 2/Packages/User/BufferScroll.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/Default (Linux).sublime-keymap
+!/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap
+!/Library/Application Support/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap
+!/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.cache
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.cache/01524fae79697630d0454ba3fabd9414
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.cache/01524fae79697630d0454ba3fabd9414.info
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.last-run
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.merged-ca-bundle
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.system-ca-bundle
+!/Library/Application Support/Sublime Text 2/Packages/User/Package Control.user-ca-bundle
+!/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/SublimeGDB.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/SublimeOnSaveBuild.sublime-settings
+!/Library/Application Support/Sublime Text 2/Packages/User/air.sublime-build
+!/Library/Application Support/Sublime Text 2/Packages/User/flex.sublime-build
+!/Library/Application Support/Sublime Text 2/Packages/User/haml.sublime-build

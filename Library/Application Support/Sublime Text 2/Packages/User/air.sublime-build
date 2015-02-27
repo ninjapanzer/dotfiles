@@ -1,0 +1,4 @@
+{
+  "cmd": ["adl", "$file"],
+  "file_regex": "."
+}

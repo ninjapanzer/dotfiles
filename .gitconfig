@@ -1,0 +1,11 @@
+[user]
+	email = pscarrone@thinkthroughmath.com
+[merge]
+	tool = sublime
+[alias]
+	pretty = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+	editor = subl -n -w
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false

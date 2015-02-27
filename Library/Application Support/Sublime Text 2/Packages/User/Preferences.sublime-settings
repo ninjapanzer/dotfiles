@@ -1,0 +1,9 @@
+{
+	"font_size": 13.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"show_minimap": false,
+	"trim_trailing_white_space_on_save": true
+}

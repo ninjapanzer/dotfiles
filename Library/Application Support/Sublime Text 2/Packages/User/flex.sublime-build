@@ -1,0 +1,4 @@
+{
+  "cmd": ["/Users/paulscarrone/Development/flex_sdk_4.6/bin/amxmlc", "$file"],
+  "selector": "source.mxml"
+}

@@ -1,0 +1,47 @@
+{
+  "farm": {
+    "20026": ["Prod-DB", "master"],
+    "20027": ["Prod-DB-Enrollments", "enrollments", "shard1"],
+    "14498": ["Production", "ttm-production"],
+    "15275": ["Review", "ttm-review", "ttm-staging"],
+    "15596": ["RC"],
+    "15597": ["lab", "apangea"],
+    "19975": ["DW-production", "DW", "DW-prod", "dw-prod"],
+    "15548": ["DW-2013-2014", "DW13", "DW-13-14"],
+    "15971": ["DW-staging", "DW-staging", "dw-staging"],
+    "19801": ["DW-staging-lab", "DW-lab"],
+    "20277": ["DW-Staging-Review", "dw-review"],
+    "20278": ["DW-Staging-Dev", "dw-dev"],
+    "15898": ["Dev"],
+    "15944": ["Jenkins"],
+    "19759": ["Solr"],
+    "19175": ["MathJS"],
+    "20464": ["QA"],
+    "20470": ["DW-Staging-QA", "dw-qa"]
+  },
+  "role": {
+    "RailsAppServer" : ["rails", "web"],
+    "Sidekiq"        : ["sidekiq"],
+    "Bunchball"      : ["bunchball", "bb"],
+    "SystemWatcher"  : ["watcher"],
+    "Reports"        : ["reports"],
+    "DevDebug"       : ["debug"],
+    "PGSQL-9-2"      : ["pg", "pgsql", "psql"],
+    "DataLoad"       : ["dl", "dataload"],
+    "Jenkins"        : ["JenkinsM", "jenkins", "master"],
+    "JenkinsSlave"   : ["jenkinsslave", "slave"],
+    "lb-nginx64-TTM" : ["lb"],
+    "NodeAppServer"  : ["node"],
+    "Solr"           : ["solr"]
+
+  },
+  "application": {
+    "968":  ["production", "master"],
+    "1204": ["review", "staging"],
+    "1242": ["lab", "apangea"],
+    "1243": ["rc", "ttm-rc"],
+    "1256": ["dw-prod", "dw-production"],
+    "1322": ["dw-staging"],
+    "1306": ["dev", "dev"]
+  }
+}

@@ -8,6 +8,7 @@
 !/.gitignore.d/dotfiles
 !/.pow
 !/.tmux.conf
+!/.ttm_scalr_aliases.json
 !/.vim
 !/.vim/autoload
 !/.vim/autoload/pathogen.vim
@@ -42,3 +43,5 @@
 !/Library/Application Support/Sublime Text 2/Packages/User/air.sublime-build
 !/Library/Application Support/Sublime Text 2/Packages/User/flex.sublime-build
 !/Library/Application Support/Sublime Text 2/Packages/User/haml.sublime-build
+!/update_cargo_nightly.sh
+!/update_rust_nightly.sh

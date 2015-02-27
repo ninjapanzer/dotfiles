@@ -1,4 +1,21 @@
 *
+!/.bash_profile
+!/.bashrc
+!/.brew_list
+!/.emacs
+!/.gitconfig
+!/.gitignore.d
+!/.gitignore.d/dotfiles
+!/.pow
+!/.tmux.conf
+!/.vim
+!/.vim/autoload
+!/.vim/autoload/pathogen.vim
+!/.vim/syntax
+!/.vim/syntax/actionscript.vim
+!/.vim/tmuxinator.bash
+!/.viminfo
+!/.vimrc
 !/Library
 !/Library/Application Support
 !/Library/Application Support/Sublime Text 2

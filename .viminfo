@@ -37,52 +37,6 @@ $
 :38
 :81
 :26
-:wo
-:w!
-:40
-:50
-:syntax on
-:syntax enable
-:760
-:tabm
-:newt
-:tabnew Main.as
-:e experiments/blank_air/blank.as
-:tabnew Main.swf
-:tabf
-:o
-:c
-:o ../.tmux.conf
-:o ~/.tmux.conf
-::c
-:Helptag
-:GitGutterEnable
-:o .vimrc
-:helptag vim-ruby
-:o ~/.vimrc
-:scriptnames
-:nerdtree
-:help NERD_tree.txt
-:Helptags
-:helptags
-:help rails
-:bundle
-:backspace
-:runtime! plugin/sensible.vim
-:scrolloff
-:'<,'>;q
-:BundleInstall
-:e ~/.vimrc
-:helptags l9
-:helptags L9
-:BundleList
-:helptags nerdtree
-:helptags NERD_tre
-:e
-:help
-:helptag
-:WQ
-:aq
 
 # Search String History (newest to oldest):
 ?/config
@@ -105,42 +59,6 @@ $
 ? \s\+$
 ?/Blank
 ?/started
-? \<Dates\>
-? \<new\>
-? \<table\>
-? \<jQuery\>
-? \<sScrollXInner\>
-? \<sScrollX\>
-??40
-? \<APP_CONFIG\>
-?/pre_quiz_passed?
-?/RunModei
-?/APP_
-?/private
-?/post_quiz_passed
-?/pre_quiz_pass
-?/post_quiz_passed:tabp
-?/pre_quiz!
-?/passed?
-?/pre
-?/percentage_to
-?/passed
-?/pass
-?/percentage_to_pass
-?/pre_quiz_score
-?/percentage_or_nil
-?/loadCon
-?/when a student is in 
-?/historical path
-? !\.\/\*
-?/a
-?/bund
-?/bundle
-?//bundle
-? \<bash_rc\>
-?/shared_bu
-?/max_conn
-?/max_connection	
 
 # Expression History (newest to oldest):
 
@@ -173,21 +91,23 @@ $
 "-	CHAR	0
 	pre
 
-# global variables:
-
 # File marks:
-'0  33  33  ~/.ttm_scalr_aliases.json
-'1  16  37  ~/.ttm_scalr_aliases.json
-'2  15  47  ~/.ttm_scalr_aliases.json
-'3  11  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
-'4  1  4  ~/workrepos/apangea/.git/COMMIT_EDITMSG
-'5  6  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
-'6  1  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
-'7  10  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
-'8  11  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
-'9  1  0  ~/workrepos/apangea/.git/MERGE_MSG
+'0  20  0  ~/.bashrc
+'1  21  57  ~/.bashrc
+'2  33  33  ~/.ttm_scalr_aliases.json
+'3  16  37  ~/.ttm_scalr_aliases.json
+'4  15  47  ~/.ttm_scalr_aliases.json
+'5  11  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
+'6  1  4  ~/workrepos/apangea/.git/COMMIT_EDITMSG
+'7  6  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
+'8  1  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
+'9  10  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
 
 # Jumplist (newest first):
+-'  20  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  21  57  ~/.bashrc
+-'  19  57  ~/.bashrc
 -'  33  33  ~/.ttm_scalr_aliases.json
 -'  1  0  ~/.ttm_scalr_aliases.json
 -'  16  37  ~/.ttm_scalr_aliases.json
@@ -259,7 +179,6 @@ $
 -'  32  0  /usr/local/etc/bitlbee/bitlbee.conf
 -'  18  24  ~/.bashrc
 -'  16  62  ~/.bashrc
--'  1  0  ~/.bashrc
 -'  1  0  ~/.profile
 -'  2  0  ~/.bash_profile
 -'  1  0  ~/.bash_profile
@@ -280,15 +199,59 @@ $
 -'  14  12  ~/workrepos/apangea/app/decorators/lesson_enrollment_decorator.rb
 -'  1  0  ~/workrepos/air_sideload_prototype/experiments/blank_air/blank.as
 -'  95  15  ~/workrepos/air_sideload_prototype/Main.as
--'  1  0  ~/workrepos/air_sideload_prototype/Main.as
--'  1  16  ~/workrepos/apangea/app/views/classroom_enrollments/_historical_list.html.slim
--'  45  0  ~/workrepos/apangea/app/views/classroom_enrollments/show.html.slim
--'  1  0  ~/workrepos/apangea/app/models/historical_pathway.rb
--'  82  26  ~/workrepos/apangea/test/integration/multiple_classroom_integration_test.rb
--'  1  0  ~/workrepos/apangea/test/integration/multiple_classroom_integration_test.rb
--'  11  3  ~/.tmuxinator/apangea.yml
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	"	20	0
+	^	20	0
+	.	19	0
+	+	2	9
+	+	18	14
+	+	7	34
+	+	11	39
+	+	11	0
+	+	10	0
+	+	9	0
+	+	8	0
+	+	16	9
+	+	18	14
+	+	4	0
+	+	3	33
+	+	18	24
+	+	7	6
+	+	8	0
+	+	7	6
+	+	5	0
+	+	31	0
+	+	27	53
+	+	27	102
+	+	27	34
+	+	27	49
+	+	27	13
+	+	27	19
+	+	27	0
+	+	27	43
+	+	27	50
+	+	27	18
+	+	27	16
+	+	27	36
+	+	28	0
+	+	27	0
+	+	27	0
+	+	26	16
+	+	16	0
+	+	14	33
+	+	12	27
+	+	14	0
+	+	2	0
+	+	3	0
+	+	18	64
+	+	19	78
+	+	19	78
+	+	19	78
+	+	21	57
+	+	19	0
 
 > ~/.ttm_scalr_aliases.json
 	"	33	33
@@ -1300,52 +1263,6 @@ $
 
 > ~/workrepos/apangea/Procfile.Production
 	"	1	0
-
-> ~/.bashrc
-	"	18	24
-	^	18	25
-	.	18	24
-	+	2	9
-	+	18	14
-	+	7	34
-	+	11	39
-	+	11	0
-	+	10	0
-	+	9	0
-	+	8	0
-	+	16	9
-	+	18	14
-	+	4	0
-	+	3	33
-	+	18	24
-	+	7	6
-	+	8	0
-	+	7	6
-	+	5	0
-	+	28	0
-	+	24	53
-	+	24	102
-	+	24	34
-	+	24	49
-	+	24	13
-	+	24	19
-	+	24	0
-	+	24	43
-	+	24	50
-	+	24	18
-	+	24	16
-	+	24	36
-	+	25	0
-	+	24	0
-	+	24	0
-	+	23	16
-	+	16	0
-	+	14	33
-	+	12	27
-	+	14	0
-	+	2	0
-	+	3	0
-	+	18	24
 
 > ~/.profile
 	"	1	0

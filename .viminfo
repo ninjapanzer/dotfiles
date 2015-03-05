@@ -17,12 +17,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
 :wq
 :q
 :w
 :qall
 :tabp
-:q!
 :tabn
 :tabnew
 :set syntax=actionscript
@@ -92,22 +92,23 @@ $
 	pre
 
 # File marks:
-'0  20  0  ~/.bashrc
-'1  21  57  ~/.bashrc
-'2  33  33  ~/.ttm_scalr_aliases.json
-'3  16  37  ~/.ttm_scalr_aliases.json
-'4  15  47  ~/.ttm_scalr_aliases.json
-'5  11  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
-'6  1  4  ~/workrepos/apangea/.git/COMMIT_EDITMSG
-'7  6  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
-'8  1  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
-'9  10  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
+'0  4  3  ~/.bashrc
+'1  24  0  ~/.bashrc
+'2  25  57  ~/.bashrc
+'3  33  33  ~/.ttm_scalr_aliases.json
+'4  16  37  ~/.ttm_scalr_aliases.json
+'5  15  47  ~/.ttm_scalr_aliases.json
+'6  11  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
+'7  1  4  ~/workrepos/apangea/.git/COMMIT_EDITMSG
+'8  6  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
+'9  1  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
 
 # Jumplist (newest first):
--'  20  0  ~/.bashrc
+-'  4  3  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  21  57  ~/.bashrc
--'  19  57  ~/.bashrc
+-'  24  0  ~/.bashrc
+-'  25  57  ~/.bashrc
+-'  23  57  ~/.bashrc
 -'  33  33  ~/.ttm_scalr_aliases.json
 -'  1  0  ~/.ttm_scalr_aliases.json
 -'  16  37  ~/.ttm_scalr_aliases.json
@@ -177,8 +178,8 @@ $
 -'  1  0  /usr/local/etc/bitlbee/bitlbee.conf
 -'  27  0  /usr/local/etc/bitlbee/bitlbee.conf
 -'  32  0  /usr/local/etc/bitlbee/bitlbee.conf
--'  18  24  ~/.bashrc
--'  16  62  ~/.bashrc
+-'  22  24  ~/.bashrc
+-'  20  62  ~/.bashrc
 -'  1  0  ~/.profile
 -'  2  0  ~/.bash_profile
 -'  1  0  ~/.bash_profile
@@ -203,55 +204,57 @@ $
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	"	20	0
-	^	20	0
-	.	19	0
-	+	2	9
-	+	18	14
-	+	7	34
-	+	11	39
-	+	11	0
-	+	10	0
-	+	9	0
-	+	8	0
-	+	16	9
-	+	18	14
-	+	4	0
-	+	3	33
-	+	18	24
-	+	7	6
-	+	8	0
-	+	7	6
-	+	5	0
-	+	31	0
-	+	27	53
-	+	27	102
-	+	27	34
-	+	27	49
-	+	27	13
-	+	27	19
-	+	27	0
-	+	27	43
-	+	27	50
-	+	27	18
-	+	27	16
-	+	27	36
-	+	28	0
-	+	27	0
-	+	27	0
-	+	26	16
-	+	16	0
-	+	14	33
-	+	12	27
+	"	4	3
+	^	4	4
+	.	4	3
+	+	6	9
+	+	22	14
+	+	11	34
+	+	15	39
+	+	15	0
 	+	14	0
-	+	2	0
-	+	3	0
-	+	18	64
-	+	19	78
-	+	19	78
-	+	19	78
-	+	21	57
-	+	19	0
+	+	13	0
+	+	12	0
+	+	20	9
+	+	22	14
+	+	8	0
+	+	7	33
+	+	22	24
+	+	11	6
+	+	12	0
+	+	11	6
+	+	9	0
+	+	35	0
+	+	31	53
+	+	31	102
+	+	31	34
+	+	31	49
+	+	31	13
+	+	31	19
+	+	31	0
+	+	31	43
+	+	31	50
+	+	31	18
+	+	31	16
+	+	31	36
+	+	32	0
+	+	31	0
+	+	31	0
+	+	30	16
+	+	20	0
+	+	18	33
+	+	16	27
+	+	18	0
+	+	6	0
+	+	7	0
+	+	22	64
+	+	23	78
+	+	23	78
+	+	23	78
+	+	25	57
+	+	23	0
+	+	2	38
+	+	4	3
 
 > ~/.ttm_scalr_aliases.json
 	"	33	33

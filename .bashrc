@@ -1,4 +1,8 @@
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 HOMEBREW=/usr/local/bin
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages

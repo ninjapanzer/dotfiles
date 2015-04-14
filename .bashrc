@@ -20,3 +20,5 @@ alias test_servers='rake db:test:prepare && RAILS_ENV=test rake servers:start'
 alias test_servers_stop='RAILS_EVN=test rake servers:stop'
 
 alias serve='python -m SimpleHTTPServer'
+
+alias ugh=‘rm -rf node_modules/ bower_components/ && npm cache clean && bower cache clean && npm i && bower i’

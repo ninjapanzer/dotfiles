@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/config
+~MSle0~/higher
 
 # Last Substitute Search Pattern:
 ~MSle0&\s\+$
@@ -17,8 +17,13 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
+:set paste
+:set_paste
+:79
+:74
+:49
 :q!
 :o
 :PluginInstall
@@ -32,13 +37,10 @@ $
 :Q
 :tab1
 :tab
-:tab3
-:tab2
-:newtab
-:p
-:38
 
 # Search String History (newest to oldest):
+?/higher
+?/ELECT
 ?/config
 ?/test
 ??q
@@ -57,8 +59,6 @@ $
 ?/`i
 ?/match
 ? \s\+$
-?/Blank
-?/started
 
 # Expression History (newest to oldest):
 
@@ -70,46 +70,71 @@ $
 "0	CHAR	0
 	web:
 ""1	LINE	0
-	54.83.26.137 ttmtexas.com
+	WHERE anchor_students.id IN e)
 "2	LINE	0
-	# This is the 6th commit message:
+	             GROUP BY
 "3	LINE	0
-	
+	               post_quiz_score
 "4	LINE	0
-	# This is the 5th commit message:
+	;
 "5	LINE	0
-	
+	ELECT *
 "6	LINE	0
-	#	killing that naughty row
+	
 "7	LINE	0
-	
+	54.83.26.137 ttmtexas.com
 "8	LINE	0
-	
+	# This is the 6th commit message:
 "9	LINE	0
-	# The 4th commit message will be skipped:
+	
 "-	CHAR	0
 	web:
 
 # File marks:
-'0  11  0  /private/etc/hosts
-'1  9  0  /private/etc/hosts
-'2  9  0  ~/workrepos/ttm-www-maxmind/.gitignore
-'3  12  17  ~/.bashrc
-'4  1  3  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/app/controllers/devise/registrations_controller.rb
-'5  27  2  ~/personalRepos/woh_meetup_events_react/webpack.config.js
-'6  14  0  ~/personalRepos/woh_meetup_events_react/NERD_tree_1
-'7  12  0  ~/workrepos/apangea/NERD_tree_1
-'8  1  0  ~/workrepos/apangea/Procfile.NewRelic
-'9  4  3  ~/.bashrc
+'0  27  0  ~/.bashrc
+'1  3  0  ~/.bash_profile
+'2  12  1  ~/.bash_profile
+'3  8  0  ~/.bashrc
+'4  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
+'5  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (4).csv
+'6  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (2).csv
+'7  1  0  ~/Downloads/TTMClass-LevelSummaryReport_05-12-2015 (1).csv
+'8  3  789324  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
+'9  22  0  ~/workrepos/apangea/.env
 
 # Jumplist (newest first):
+-'  27  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  3  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  12  1  ~/.bash_profile
+-'  8  0  ~/.bashrc
+-'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
+-'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (4).csv
+-'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (2).csv
+-'  1  0  ~/Downloads/TTMClass-LevelSummaryReport_05-12-2015 (1).csv
+-'  3  789324  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
+-'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
+-'  22  0  ~/workrepos/apangea/.env
+-'  21  25  ~/workrepos/apangea/.env
+-'  1  0  ~/workrepos/apangea/.env
+-'  8  9  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59471.sql
+-'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59471.sql
+-'  7  39  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59365.sql
+-'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59365.sql
+-'  71  34  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  2  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  72  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  49  16  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  77  22  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+-'  167  31  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
 -'  11  0  /private/etc/hosts
 -'  1  0  /private/etc/hosts
 -'  9  0  /private/etc/hosts
 -'  9  0  ~/workrepos/ttm-www-maxmind/.gitignore
 -'  1  0  ~/workrepos/ttm-www-maxmind/.gitignore
 -'  12  17  ~/.bashrc
--'  1  0  ~/.bashrc
 -'  1  3  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/app/controllers/devise/registrations_controller.rb
 -'  11  0  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
 -'  30  2  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
@@ -177,46 +202,11 @@ $
 -'  121  39  ~/workrepos/air_sideload_prototype/src/com/ttm/mobile/Main.as
 -'  119  0  ~/workrepos/air_sideload_prototype/src/com/ttm/mobile/Main.as
 -'  118  53  ~/workrepos/air_sideload_prototype/src/com/ttm/mobile/Main.as
--'  126  7  ~/workrepos/air_sideload_prototype/src/com/ttm/mobile/Main.as
--'  11  0  ~/workrepos/air_sideload_prototype/src/com/ttm/mobile/Main.as
--'  1  0  ~/workrepos/air_sideload_prototype/bin/Main.swf
--'  34  0  ~/workrepos/air_sideload_prototype/build_for_target.sh
--'  1  0  ~/workrepos/air_sideload_prototype/build_for_target.sh
--'  1  0  ~/workrepos/air_sideload_prototype/scripts/build_ios_simulator.sh
--'  46  82  ~/workrepos/apangea/app/views/classroom_enrollments/show.html.slim
--'  1  0  ~/workrepos/apangea/app/views/classroom_enrollments/show.html.slim
--'  1  0  ~/workrepos/apangea/app/views/shared/_student_pathway.html.slim
--'  45  2  ~/workrepos/apangea/app/assets/javascripts/data_tables/IndivdPathwayReport.coffee
--'  1  0  ~/workrepos/apangea/app/assets/javascripts/data_tables/IndivdPathwayReport.coffee
--'  41  21  ~/workrepos/apangea/app/decorators/lesson_enrollment_decorator.rb
--'  1  0  ~/workrepos/apangea/app/decorators/lesson_enrollment_decorator.rb
--'  48  25  ~/workrepos/apangea/app/views/shared/_student_pathway.html.slim
--'  42  39  ~/workrepos/apangea/app/assets/javascripts/data_tables/IndivdPathwayReport.coffee
--'  7  2  ~/workrepos/apangea/app/views/shared/_student_pathway.html.slim
--'  8  20  ~/workrepos/apangea/app/views/shared/_student_pathway.html.slim
--'  20  1  /usr/local/etc/bitlbee/bitlbee.conf
--'  1  0  /usr/local/etc/bitlbee/bitlbee.conf
--'  27  0  /usr/local/etc/bitlbee/bitlbee.conf
--'  32  0  /usr/local/etc/bitlbee/bitlbee.conf
--'  22  24  ~/.bashrc
--'  20  62  ~/.bashrc
--'  1  0  ~/.profile
 
 # History of marks within files (newest to oldest):
 
-> /private/etc/hosts
-	"	11	0
-	.	11	0
-	+	11	0
-
-> ~/workrepos/ttm-www-maxmind/.gitignore
-	"	9	0
-	^	9	0
-	.	8	14
-	+	8	14
-
 > ~/.bashrc
-	"	12	17
+	"	27	0
 	^	12	18
 	.	12	17
 	+	6	9
@@ -268,6 +258,95 @@ $
 	+	2	38
 	+	4	3
 	+	12	17
+
+> ~/.bash_profile
+	"	3	0
+	^	12	2
+	.	12	2
+	+	1	18
+	+	2	0
+	+	3	61
+	+	13	0
+	+	6	1
+	+	7	2
+	+	8	3
+	+	9	2
+	+	10	3
+	+	11	4
+	+	12	2
+
+> ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
+	"	1	0
+
+> ~/Downloads/TTMStudentInfoReport_05-12-2015 (4).csv
+	"	1	0
+
+> ~/Downloads/TTMStudentInfoReport_05-12-2015 (2).csv
+	"	1	0
+
+> ~/Downloads/TTMClass-LevelSummaryReport_05-12-2015 (1).csv
+	"	1	0
+
+> /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
+	"	3	789324
+	^	3	789325
+	.	3	789324
+	+	1	32
+	+	2	5
+	+	1	34
+	+	2	67
+	+	1	13
+	+	2	1
+	+	2	68
+	+	3	789324
+
+> ~/workrepos/apangea/.env
+	"	22	0
+	^	21	26
+	.	21	25
+	+	21	25
+
+> /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59471.sql
+	"	8	9
+	^	8	10
+	.	8	9
+	+	1	13
+	+	7	39
+	+	8	9
+
+> /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59365.sql
+	"	7	39
+	.	7	39
+	+	1	13
+	+	8	9
+	+	7	39
+
+> /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
+	"	71	34
+	^	71	108
+	.	71	107
+	+	1	7
+	+	167	31
+	+	1	8
+	+	1	7
+	+	84	32
+	+	77	23
+	+	1	0
+	+	56	57
+	+	72	0
+	+	59	8
+	+	71	107
+
+> /private/etc/hosts
+	"	11	0
+	.	11	0
+	+	11	0
+
+> ~/workrepos/ttm-www-maxmind/.gitignore
+	"	9	0
+	^	9	0
+	.	8	14
+	+	8	14
 
 > ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
 	"	11	0
@@ -1346,13 +1425,6 @@ $
 	.	1	14
 	+	1	14
 
-> ~/.bash_profile
-	"	2	0
-	^	1	18
-	.	2	0
-	+	1	18
-	+	2	0
-
 > ~/workrepos/apangea/app/assets/javascripts/templates/dashboard/overview_report.slimbars
 	"	87	0
 
@@ -1717,140 +1789,4 @@ $
 > ~/workrepos/apangea/app/NERD_tree_1
 	"	4	0
 	.	1	0
-	+	1	0
-
-> ~/.vimrc
-	"	2	0
-	^	7	16
-	.	7	15
-	+	18	0
-	+	1	0
-	+	18	44
-	+	18	41
-	+	18	4
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	0
-	+	18	40
-	+	18	4
-	+	18	0
-	+	18	0
-	+	18	0
-	+	1	25
-	+	2	0
-	+	18	0
-	+	3	25
-	+	11	29
-	+	12	0
-	+	15	25
-	+	18	34
-	+	15	0
-	+	12	0
-	+	13	5
-	+	17	10
-	+	10	0
-	+	13	0
-	+	17	0
-	+	18	0
-	+	5	15
-	+	8	12
-	+	6	12
-	+	7	15
-
-> ~/workrepos/apangea/app/controllers/lesson_standards_controller.rb
-	"	1	0
-	.	16	0
-	+	16	0
-
-> ~/workrepos/apangea/.vimrc
-	"	1	0
-
-> ~/workrepos/apangea/app/observers/lesson_enrollment_observer.rb
-	"	6	4
-	.	4	0
-	+	6	4
-	+	6	0
-	+	5	2
-	+	5	0
-	+	4	0
-
-> ~/.gitignore
-	"	1	0
-	^	10	6
-	.	10	6
-	+	1	0
-	+	11	0
-	+	1	0
-	+	9	4
-	+	11	0
-	+	9	4
-	+	2	5
-	+	1	0
-	+	2	5
-	+	1	0
-	+	10	6
-	+	10	9
-	+	2	9
-	+	10	50
-	+	4	0
-	+	11	0
-	+	3	7
-	+	10	6
-	+	3	5
-	+	10	6
-
-> ~/workrepos/apangea/app/ControlP
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	8	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workrepos/apangea/config/application.rb
-	"	23	0
-	.	21	0
-	+	17	22
-	+	17	5
-	+	18	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	22	0
-	+	21	0
-
-> ~/.vim/bundle/nerdtree/doc/NERD_tree.txt
-	"	9	0
-
-> ~/workrepos/air_sideload_prototype/.bashrc
-	"	1	0
-	^	1	15
-	.	1	0
-	+	1	0
-	+	2	0
-	+	2	0
 	+	1	0

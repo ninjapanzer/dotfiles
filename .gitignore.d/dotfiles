@@ -51,5 +51,11 @@
 !/Library/Application Support/Sublime Text 2/Packages/User/air.sublime-build
 !/Library/Application Support/Sublime Text 2/Packages/User/flex.sublime-build
 !/Library/Application Support/Sublime Text 2/Packages/User/haml.sublime-build
+!/Library/Application Support/Sublime Text 3
+!/Library/Application Support/Sublime Text 3/Packages
+!/Library/Application Support/Sublime Text 3/Packages/User
+!/Library/Application Support/Sublime Text 3/Packages/User/Package Control.merged-ca-bundle
+!/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings
+!/Library/Application Support/Sublime Text 3/Packages/User/Package Control.system-ca-bundle
 !/update_cargo_nightly.sh
 !/update_rust_nightly.sh

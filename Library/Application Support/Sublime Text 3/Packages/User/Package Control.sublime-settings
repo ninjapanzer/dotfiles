@@ -1,13 +1,9 @@
 {
-	"auto_upgrade_last_run": null,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
-		"ActionScript 3",
-		"Coffee Formatter",
-		"CoffeeScript",
 		"Elixir",
 		"Fix Mac Path",
 		"Git",
@@ -15,14 +11,16 @@
 		"GitHub Flavored Markdown Preview",
 		"Google Spell Check",
 		"Grunt",
-		"Hacker News Reader",
 		"Haml",
 		"Handlebars",
+		"IcedCoffeeScript",
 		"Jade",
 		"JSHint",
 		"JSHint Gutter",
 		"Kerbal Space Program Configuration Syntax",
-		"Markboard",
+		"Kulture",
+		"MarkdownEditing",
+		"OmniSharp",
 		"orgmode",
 		"Origami",
 		"Package Control",
@@ -31,7 +29,8 @@
 		"Ruby Slim",
 		"Rust",
 		"Sass",
+		"SublimeGit",
 		"SublimeLinter",
-		"SublimErl"
+		"SublimeLinter-coffeelint"
 	]
 }

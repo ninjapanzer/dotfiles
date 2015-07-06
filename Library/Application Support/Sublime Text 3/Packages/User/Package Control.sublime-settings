@@ -9,6 +9,7 @@
 		"Git",
 		"GitGutter",
 		"GitHub Flavored Markdown Preview",
+		"Github Tools",
 		"Google Spell Check",
 		"Grunt",
 		"Haml",
@@ -29,7 +30,6 @@
 		"Ruby Slim",
 		"Rust",
 		"Sass",
-		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-coffeelint"
 	]

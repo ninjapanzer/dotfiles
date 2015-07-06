@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"html"
+	],
+	"margin": 2,
+	"show_minimap": false,
+	"spell_check": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true
+}

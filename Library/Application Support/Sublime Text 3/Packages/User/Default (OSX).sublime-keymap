@@ -1,4 +1,5 @@
 [
   { "keys": ["super+shift+up"], "command": "swap_line_up" },
-  { "keys": ["super+shift+down"], "command": "swap_line_down" }
+  { "keys": ["super+shift+down"], "command": "swap_line_down" },
+  { "keys": ["super+0"], "command": "reset_font_size" }
 ]

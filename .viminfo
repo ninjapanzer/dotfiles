@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/higher
+~MSle0~/agent
 
 # Last Substitute Search Pattern:
 ~MSle0&\s\+$
@@ -18,8 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:q!
 :q
+:q!
+:103
 :w
 :set paste
 :set_paste
@@ -36,9 +37,11 @@ $
 :set syntax=as
 :Q
 :tab1
-:tab
 
 # Search String History (newest to oldest):
+?/agent
+?/user
+?/user-agent
 ?/higher
 ?/ELECT
 ?/config
@@ -56,9 +59,6 @@ $
 ?/feedback
 ?/feedbac
 ?/show
-?/`i
-?/match
-? \s\+$
 
 # Expression History (newest to oldest):
 
@@ -70,46 +70,72 @@ $
 "0	CHAR	0
 	web:
 ""1	LINE	0
-	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+	
 "2	LINE	0
-	export NVM_DIR="/Users/paulscarrone/.nvm"
+	SQLITE3=/usr/local/Cellar/sqlite/3.11.0_1
 "3	LINE	0
-	
+	export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 "4	LINE	0
-	alias snap_apangea='psql -c "CREATE DATABASE apangea_merge TEMPLATE apangea_development"'
+	  Port 3254
 "5	LINE	0
-	
+	  IdentityFile ~/.ssh/tupac
 "6	LINE	0
-	alias ugh='rm -rf node_modules/ bower_components/ && npm cache clean && bower cache clean && npm i && bower i'
+	  IdentitiesOnly yes
 "7	LINE	0
-	
+	  User passenger
 "8	LINE	0
-	alias serve='python -m SimpleHTTPServer'
+	  Hostname 50.116.21.91
 "9	LINE	0
-	
+	Host tupac
 "-	CHAR	0
 	web:
 
 # File marks:
-'0  24  0  ~/.bashrc
-'1  1  0  ~/.bashrc
-'2  1  0  ~/.bashrc
-'3  1  88  ~/.bashrc
-'4  4  0  ~/workrepos/live_teaching/.env
-'5  5  0  ~/workrepos/live_teaching/.env
-'6  1  0  ~/.bashrc
-'7  3  0  ~/.bash_profile
-'8  12  1  ~/.bash_profile
-'9  1  0  ~/.bashrc
+'0  7  43  ~/.gitconfig
+'1  199  0  ~/.gnupg/gpg.conf
+'2  10  1  ~/.profile
+'3  1  0  ~/.bashrc
+'4  1  0  ~/.profile
+'5  1  0  ~/.bash_profile
+'6  15  0  ~/.bashrc
+'7  22  36  ~/.bashrc
+'8  7  0  ~/.bashrc
+'9  36  0  ~/.bashrc
 
 # Jumplist (newest first):
--'  24  0  ~/.bashrc
+-'  7  43  ~/.gitconfig
+-'  1  0  ~/.gitconfig
+-'  199  0  ~/.gnupg/gpg.conf
+-'  112  0  ~/.gnupg/gpg.conf
+-'  107  0  ~/.gnupg/gpg.conf
+-'  1  0  ~/.gnupg/gpg.conf
+-'  10  1  ~/.profile
+-'  1  0  ~/.profile
 -'  1  0  ~/.bashrc
+-'  1  0  ~/.bash_profile
+-'  15  0  ~/.bashrc
+-'  22  36  ~/.bashrc
+-'  7  0  ~/.bashrc
+-'  36  0  ~/.bashrc
+-'  34  0  ~/.bashrc
+-'  24  0  ~/.ssh/config
+-'  1  0  ~/.ssh/config
+-'  2  4  ~/NetBeansProjects/ReadingFiles/.gitignore
+-'  1  0  ~/NetBeansProjects/ReadingFiles/.gitignore
+-'  2  4  ~/NetBeansProjects/DnDDiceRoller/.gitignore
+-'  1  0  ~/NetBeansProjects/DnDDiceRoller/.gitignore
+-'  1  0  ~/NetBeansProjects/ArrayLikeLists/.gitignore
+-'  2  6  ~/NetBeansProjects/ArrayLikeLists/.gitignore
+-'  50  0  ~/.bashrc
+-'  1  0  ~/NetBeansProjects/gradingFun/.gitignore
+-'  1  0  ~/Documents/open_arch_adp.txt
+-'  102  0  ~/.ssh/known_hosts
+-'  1  0  ~/.ssh/known_hosts
+-'  27  0  ~/.bashrc
 -'  4  0  ~/workrepos/live_teaching/.env
 -'  1  0  ~/workrepos/live_teaching/.env
 -'  5  0  ~/workrepos/live_teaching/.env
 -'  3  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
 -'  12  1  ~/.bash_profile
 -'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
 -'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (4).csv
@@ -174,33 +200,35 @@ $
 -'  1  0  ~/workrepos/WarmUpGamePrototype/.git/MERGE_MSG
 -'  1  0  ~/workrepos/WarmUpGamePrototype/.git/COMMIT_EDITMSG
 -'  22  33  ~/workrepos/WarmUpGamePrototype/.gitignore
--'  176  9  ~/workrepos/WarmUpGamePrototype/.gitignore
--'  53  9  ~/workrepos/WarmUpGamePrototype/.gitignore
--'  36  0  ~/workrepos/WarmUpGamePrototype/.gitignore
--'  1  0  ~/workrepos/WarmUpGamePrototype/.gitignore
--'  33  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
--'  15  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
--'  2  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
--'  1  0  /Volumes/Office Backup/content_svn/ContentFiles/branches/ContentBranch-8_3_2012/CodeProjects/FlashJSCaller/EventCatcher/.git/MERGE_MSG
--'  1  0  ~/workrepos/apangea/app/controllers/application_controller.rb
--'  18  48  ~/workrepos/apangea/app/controllers/enrollment_attempts_controller.rb
--'  31  37  ~/workrepos/apangea/app/controllers/enrollment_attempts_controller.rb
--'  19  8  ~/workrepos/apangea/app/controllers/enrollment_attempts_controller.rb
--'  1  0  ~/workrepos/apangea/app/controllers/enrollment_attempts_controller.rb
--'  14  19  ~/workrepos/apangea/app/controllers/enrollment_current_items_controller.rb
--'  13  6  ~/workrepos/apangea/app/controllers/enrollment_current_items_controller.rb
--'  109  0  ~/workrepos/apangea/app/controllers/enrollment_current_items_controller.rb
--'  1  0  ~/workrepos/apangea/app/controllers/enrollment_current_items_controller.rb
--'  4  16  ~/workrepos/air_sideload_prototype/.gitignore
--'  1  0  ~/workrepos/air_sideload_prototype/.gitignore
--'  17  0  ~/.bashrc
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitconfig
+	"	7	43
+	^	7	44
+	.	7	43
+	+	7	43
+
+> ~/.gnupg/gpg.conf
+	"	199	0
+	^	199	0
+	.	199	0
+	+	199	0
+
+> ~/.profile
+	"	10	1
+	^	10	2
+	.	10	2
+	+	1	14
+	+	11	0
+	+	9	0
+	+	8	1
+	+	10	2
+
 > ~/.bashrc
-	"	24	0
-	^	24	0
-	.	23	110
+	"	1	0
+	^	15	0
+	.	15	0
 	+	1	9
 	+	1	14
 	+	1	34
@@ -218,7 +246,7 @@ $
 	+	1	0
 	+	1	6
 	+	1	0
-	+	25	0
+	+	28	0
 	+	1	53
 	+	1	102
 	+	1	34
@@ -253,17 +281,22 @@ $
 	+	1	0
 	+	1	88
 	+	1	0
-	+	23	109
+	+	26	109
 	+	1	0
-	+	23	110
-
-> ~/workrepos/live_teaching/.env
-	"	4	0
-	.	5	0
+	+	26	110
+	+	50	0
+	+	35	45
+	+	36	46
+	+	5	40
+	+	53	0
+	+	22	46
 	+	5	0
+	+	22	37
+	+	14	14
+	+	15	0
 
 > ~/.bash_profile
-	"	3	0
+	"	1	0
 	^	12	2
 	.	12	2
 	+	1	18
@@ -277,6 +310,55 @@ $
 	+	10	3
 	+	11	4
 	+	12	2
+
+> ~/.ssh/config
+	"	24	0
+	.	25	0
+	+	10	16
+	+	13	10
+	+	25	0
+
+> ~/NetBeansProjects/ReadingFiles/.gitignore
+	"	2	4
+	^	2	5
+	.	2	0
+	+	2	0
+
+> ~/NetBeansProjects/DnDDiceRoller/.gitignore
+	"	2	4
+	^	2	5
+	.	2	4
+	+	1	6
+	+	2	4
+
+> ~/NetBeansProjects/ArrayLikeLists/.gitignore
+	"	1	0
+	^	2	7
+	.	1	0
+	+	2	0
+	+	1	0
+
+> ~/NetBeansProjects/gradingFun/.gitignore
+	"	1	0
+	^	1	0
+	.	2	0
+	+	1	12
+	+	1	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/open_arch_adp.txt
+	"	1	0
+
+> ~/.ssh/known_hosts
+	"	102	0
+	.	103	0
+	+	103	0
+
+> ~/workrepos/live_teaching/.env
+	"	4	0
+	.	5	0
+	+	5	0
 
 > ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
 	"	1	0
@@ -1422,12 +1504,6 @@ $
 > ~/workrepos/apangea/Procfile.Production
 	"	1	0
 
-> ~/.profile
-	"	1	0
-	^	1	14
-	.	1	14
-	+	1	14
-
 > ~/workrepos/apangea/app/assets/javascripts/templates/dashboard/overview_report.slimbars
 	"	87	0
 
@@ -1637,154 +1713,3 @@ $
 	+	1	0
 	+	1	0
 	+	2	0
-
-> ~/workrepos/apangea/test/integration/classroom_student_performance_report_integration_test.rb
-	"	25	0
-	^	9	0
-
-> ~/workrepos/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workrepos/apangea/db/cap_attempted_time_to_solve_at_ten_mintues.sql
-	"	5	0
-
-> ~/Downloads/jquery-scroll-follow/lib/jquery.scrollfollow.js
-	"	1	0
-
-> ~/mm.cfg
-	"	1	21
-	^	1	22
-	.	1	0
-	+	2	0
-	+	1	0
-
-> ~/ControlP
-	"	7	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/NERD_tree_1
-	"	14	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workrepos/apangea/app/controllers/pathways_controller.rb
-	"	67	0
-
-> ~/.tmux.conf
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0

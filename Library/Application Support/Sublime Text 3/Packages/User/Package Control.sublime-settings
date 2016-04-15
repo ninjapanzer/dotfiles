@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -6,23 +7,17 @@
 	[
 		"Elixir",
 		"Fix Mac Path",
-		"Git",
 		"GitGutter",
 		"GitHub Flavored Markdown Preview",
-		"Github Tools",
-		"Google Spell Check",
 		"Grunt",
 		"Haml",
-		"Handlebars",
 		"IcedCoffeeScript",
 		"Jade",
-		"JSHint",
-		"JSHint Gutter",
+		"JavaScriptNext - ES6 Syntax",
+		"JSX",
 		"Kerbal Space Program Configuration Syntax",
-		"Kulture",
+		"LESS",
 		"MarkdownEditing",
-		"OmniSharp",
-		"orgmode",
 		"Origami",
 		"Package Control",
 		"Pretty JSON",
@@ -31,6 +26,7 @@
 		"Rust",
 		"Sass",
 		"SublimeLinter",
-		"SublimeLinter-coffeelint"
+		"SublimeLinter-contrib-eslint",
+		"TypeScript"
 	]
 }

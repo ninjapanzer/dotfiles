@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/agent
+~MSle0~/xml version="1.0" encoding="UTF-8"
 
 # Last Substitute Search Pattern:
 ~MSle0&\s\+$
@@ -17,9 +17,9 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
 :wq
 :q
-:q!
 :103
 :w
 :set paste
@@ -39,6 +39,7 @@ $
 :tab1
 
 # Search String History (newest to oldest):
+??xml version="1.0" encoding="UTF-8"?>
 ?/agent
 ?/user
 ?/user-agent
@@ -58,7 +59,6 @@ $
 ?/297796:ta
 ?/feedback
 ?/feedbac
-?/show
 
 # Expression History (newest to oldest):
 
@@ -70,39 +70,45 @@ $
 "0	CHAR	0
 	web:
 ""1	LINE	0
-	
+	enable-ssh-support
 "2	LINE	0
-	SQLITE3=/usr/local/Cellar/sqlite/3.11.0_1
+	SSH_AGENT_PID=1290
 "3	LINE	0
-	export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+	SSH_AUTH_SOCK=/tmp/gpg-SYbbD9/S.gpg-agent.ssh
 "4	LINE	0
-	  Port 3254
+	SSH_AGENT_PID=62681
 "5	LINE	0
-	  IdentityFile ~/.ssh/tupac
+	SSH_AUTH_SOCK=/tmp/gpg-QOuWlh/S.gpg-agent.ssh
 "6	LINE	0
-	  IdentitiesOnly yes
+	
 "7	LINE	0
-	  User passenger
+	SQLITE3=/usr/local/Cellar/sqlite/3.11.0_1
 "8	LINE	0
-	  Hostname 50.116.21.91
+	export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 "9	LINE	0
-	Host tupac
+	  Port 3254
 "-	CHAR	0
 	web:
 
 # File marks:
-'0  7  43  ~/.gitconfig
-'1  199  0  ~/.gnupg/gpg.conf
-'2  10  1  ~/.profile
-'3  1  0  ~/.bashrc
-'4  1  0  ~/.profile
-'5  1  0  ~/.bash_profile
-'6  15  0  ~/.bashrc
-'7  22  36  ~/.bashrc
-'8  7  0  ~/.bashrc
-'9  36  0  ~/.bashrc
+'0  20  85  /Library/LaunchDaemons/limit.maxfiles.plist
+'1  30  28  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
+'2  1  0  ~/.gnupg/gpg-agent.conf
+'3  1  0  ~/.gpg-agent-info
+'4  7  43  ~/.gitconfig
+'5  199  0  ~/.gnupg/gpg.conf
+'6  10  1  ~/.profile
+'7  1  0  ~/.bashrc
+'8  1  0  ~/.profile
+'9  1  0  ~/.bash_profile
 
 # Jumplist (newest first):
+-'  20  85  /Library/LaunchDaemons/limit.maxfiles.plist
+-'  21  0  /Library/LaunchDaemons/limit.maxfiles.plist
+-'  30  28  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
+-'  1  0  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
+-'  1  0  ~/.gnupg/gpg-agent.conf
+-'  1  0  ~/.gpg-agent-info
 -'  7  43  ~/.gitconfig
 -'  1  0  ~/.gitconfig
 -'  199  0  ~/.gnupg/gpg.conf
@@ -196,12 +202,30 @@ $
 -'  4  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
 -'  1  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
 -'  11  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
--'  1  0  ~/workrepos/apangea/.git/MERGE_MSG
--'  1  0  ~/workrepos/WarmUpGamePrototype/.git/MERGE_MSG
--'  1  0  ~/workrepos/WarmUpGamePrototype/.git/COMMIT_EDITMSG
--'  22  33  ~/workrepos/WarmUpGamePrototype/.gitignore
 
 # History of marks within files (newest to oldest):
+
+> /Library/LaunchDaemons/limit.maxfiles.plist
+	"	20	85
+	^	20	86
+	.	20	78
+	+	20	78
+
+> ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
+	"	30	28
+	^	30	29
+	.	30	28
+	+	30	28
+
+> ~/.gnupg/gpg-agent.conf
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.gpg-agent-info
+	"	1	0
+	.	2	0
+	+	2	0
 
 > ~/.gitconfig
 	"	7	43
@@ -1545,171 +1569,3 @@ $
 	^	1	17
 	.	1	16
 	+	1	16
-
-> ~/.tmuxinator/apangea.yml
-	"	11	3
-	^	11	4
-	.	11	3
-	+	20	0
-	+	20	25
-	+	20	0
-	+	19	102
-	+	8	0
-	+	9	0
-	+	10	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	10	92
-	+	10	4
-	+	11	4
-	+	10	5
-	+	11	3
-
-> ~/.tmuxinator/default.yml
-	"	10	36
-	^	26	38
-	.	26	37
-	+	3	14
-	+	5	0
-	+	27	23
-	+	27	0
-	+	27	12
-	+	27	31
-	+	27	15
-	+	27	0
-	+	27	8
-	+	27	43
-	+	27	8
-	+	27	0
-	+	27	0
-	+	27	9
-	+	27	8
-	+	27	14
-	+	27	8
-	+	27	8
-	+	27	6
-	+	27	17
-	+	27	0
-	+	27	17
-	+	27	12
-	+	27	0
-	+	27	0
-	+	15	5
-	+	27	4
-	+	27	4
-	+	19	18
-	+	19	4
-	+	19	4
-	+	16	2
-	+	17	4
-	+	18	4
-	+	17	5
-	+	18	5
-	+	19	7
-	+	19	8
-	+	16	2
-	+	19	22
-	+	27	2
-	+	27	2
-	+	15	5
-	+	27	0
-	+	19	0
-	+	17	90
-	+	27	8
-	+	19	29
-	+	27	15
-	+	6	0
-	+	7	0
-	+	9	0
-	+	9	0
-	+	16	0
-	+	19	14
-	+	27	0
-	+	19	14
-	+	27	0
-	+	21	15
-	+	23	0
-	+	17	5
-	+	25	43
-	+	26	37
-
-> ~/workrepos/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/workrepos/ControlP
-	"	10	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0

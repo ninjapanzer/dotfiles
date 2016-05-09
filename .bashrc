@@ -52,3 +52,7 @@ alias gb='git branch'
 alias ugh='rm -rf node_modules/ bower_components/ && npm cache clean && bower cache clean && npm i && bower i'
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/samuraipanzer/.sdkman"
+[[ -s "/Users/samuraipanzer/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/samuraipanzer/.sdkman/bin/sdkman-init.sh"

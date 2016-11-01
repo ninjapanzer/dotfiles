@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/xml version="1.0" encoding="UTF-8"
+~Msle0~/\<192\>
 
 # Last Substitute Search Pattern:
 ~MSle0&\s\+$
@@ -17,11 +17,16 @@
 $
 
 # Command Line History (newest to oldest):
-:q!
 :wq
 :q
-:103
+:142
+:138
 :w
+:q!
+:q1
+:132
+:w!
+:103
 :set paste
 :set_paste
 :79
@@ -32,13 +37,13 @@ $
 :qall
 :tabp
 :tabn
-:tabnew
-:set syntax=actionscript
-:set syntax=as
-:Q
-:tab1
 
 # Search String History (newest to oldest):
+? \<192\>
+? \<php56\>
+?/php
+?/avn
+?/insert
 ??xml version="1.0" encoding="UTF-8"?>
 ?/agent
 ?/user
@@ -54,11 +59,6 @@ $
 ?/asset_path
 ?/sharded
 ?/dom_id
-?/image
-?/@feedback_package
-?/297796:ta
-?/feedback
-?/feedbac
 
 # Expression History (newest to oldest):
 
@@ -67,192 +67,165 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	web:
-""1	LINE	0
-	enable-ssh-support
-"2	LINE	0
-	SSH_AGENT_PID=1290
-"3	LINE	0
-	SSH_AUTH_SOCK=/tmp/gpg-SYbbD9/S.gpg-agent.ssh
-"4	LINE	0
-	SSH_AGENT_PID=62681
-"5	LINE	0
-	SSH_AUTH_SOCK=/tmp/gpg-QOuWlh/S.gpg-agent.ssh
-"6	LINE	0
+"0	LINE	0
 	
+""1	LINE	0
+	417
+<lrs.readydayone.com,104.131.6.184 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOUeLlyqzBzhtTx1p8EU3oyzsySx7//kUqCyC5ihyCvZlsUgtoxGqyRepw1/q5C85pnwwvFkMxcO8rnoJbBSBFd/WsuncmKzHTUVDxmDSG8hINDmB6o/NR4L3ICCUP6ruDA0lYkfbnz3fmmLh3vFPiOv4ZZEqaI3iEusV/ySd4jSQUreSJH1XFRgLUcUAFlh9rhx32ePQCUXCzP0ZKL3rqp7dyz6ESpIl2+pnktuuEWDra4OxVuvMZmc4N+23Mb7F808I7OCx8Ef7JmWjxpc1e4KKCYrVWSWwut57lOBCbowJHNXtQ1CLSW77K6zp8frzrcICAJK0QtPtigu8YheWx
+"2	LINE	0
+	418
+<lrs.readydayone.com,104.236.88.145 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBwcadoozTUZGs/c3eGUF9Qg4q/1gH/O9fLXlnkvZVaqpm4P6cW0u6AoEln7Hyp/p2agBENAW6boEB+PwQJOLawkl0LxujfBq/UUWwE7MyUTgBNerhWxdx8Lwi1cvB5Ht3Bmr7ujmJ3TxF1aaEPA+zG9Nh1Ow0i5C+LuOrZPPsAGiTYrqd7/C3U09FH9rWisRfv/jIfDJMhuJG0GbatKsyJYe+RVW/1LrfyD5vh322AFWK60PbjaDQ3Wki30np8KtrTQsdZ9i8d2dYubPzokFntYULSwwYE11Erkawzt0oql8ks6aTMO5p2ecpYCveFzQZLzdN9xPM03YGGTyYH/vH
+"3	LINE	0
+	45.55.51.183 readydayone.com
+"4	LINE	0
+	[[ -s "/Users/samuraipanzer/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/samuraipanzer/.sdkman/bin/sdkman-init.sh"
+"5	LINE	0
+	export SDKMAN_DIR="/Users/samuraipanzer/.sdkman"
+"6	LINE	0
+	#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 "7	LINE	0
-	SQLITE3=/usr/local/Cellar/sqlite/3.11.0_1
+	399
+<104.131.172.185 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDpsaKnxAvCZ8MZojRO/SoeUtjZPae6iNsQaf+B7T4A+I9PCwTnpF0XI1G0QOnuW+62BZ3qegvM8LQM9s2aCiC5oDFK4qknjeKuuNbhNyQD2KokEAiGXy2LoUorhOwEkYCysHnZE7AY6JjqqxS4mj/XHP01EFLHVsyq3agMkNmk97+3htAnF3yGx3pyKblP56U0wy2mYsCQFVmPb/+8XHTbkGdciyp/nNangdMUKJyhfFfvDP4E5cHfyPXXt+vQuALX5sUUEO7g/19tPjP1b1tse6/nIIfvw/eVuRoGWWroVIFf2QJaUF4hU15miRwTlkURDCfKqP6ShZ/zwAGqjgGH
 "8	LINE	0
-	export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+	  AddressFamily any
 "9	LINE	0
-	  Port 3254
+	
+"q	CHAR	0
+	
 "-	CHAR	0
-	web:
+	N
 
 # File marks:
-'0  20  85  /Library/LaunchDaemons/limit.maxfiles.plist
-'1  30  28  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
-'2  1  0  ~/.gnupg/gpg-agent.conf
-'3  1  0  ~/.gpg-agent-info
-'4  7  43  ~/.gitconfig
-'5  199  0  ~/.gnupg/gpg.conf
-'6  10  1  ~/.profile
-'7  1  0  ~/.bashrc
-'8  1  0  ~/.profile
-'9  1  0  ~/.bash_profile
+'0  6  10  /private/etc/my.cnf
+'1  45  42  ~/.bashrc
+'2  7  0  ~/.ssh/config
+'3  23  22  ~/.ssh/config
+'4  141  0  ~/.ssh/known_hosts
+'5  29  0  ~/.ssh/config
+'6  138  0  ~/.ssh/known_hosts
+'7  28  26  ~/.ssh/config
+'8  1  0  /private/etc/my.cnf
+'9  2  27  /private/etc/my.cnf
 
 # Jumplist (newest first):
+-'  6  10  /private/etc/my.cnf
+-'  1  0  /private/etc/my.cnf
+-'  45  42  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  7  0  ~/.ssh/config
+-'  1  0  ~/.ssh/config
+-'  23  22  ~/.ssh/config
+-'  27  15  ~/.ssh/config
+-'  141  0  ~/.ssh/known_hosts
+-'  1  0  ~/.ssh/known_hosts
+-'  29  0  ~/.ssh/config
+-'  138  0  ~/.ssh/known_hosts
+-'  28  26  ~/.ssh/config
+-'  2  27  /private/etc/my.cnf
+-'  4  22  /private/etc/my.cnf
+-'  48  23  ~/.ssh/config
+-'  12  0  /private/etc/hosts
+-'  1  0  /private/etc/hosts
+-'  18  0  /private/etc/hosts
+-'  20  0  /private/etc/hosts
+-'  14  34  /private/etc/hosts
+-'  13  6  /private/etc/hosts
+-'  1  0  /private/etc/vhosts
+-'  30  10  ~/.ssh/config
+-'  21  0  /private/etc/hosts
+-'  19  36  /private/etc/hosts
+-'  17  32  /private/etc/hosts
+-'  22  26  /private/etc/hosts
+-'  4  8  ~/.ssh/config
+-'  5  71  ~/.profile
+-'  1  0  ~/.profile
+-'  1  0  ~/.bash_profile
+-'  33  0  ~/.bashrc
+-'  58  0  ~/.bashrc
+-'  132  0  ~/.ssh/known_hosts
+-'  1  10  ~/unstiall_vbox.sh
+-'  1  0  ~/workrepos/new-new-cornerstone/.ruby-version
+-'  13  24  ~/.ssh/config
+-'  15  18  ~/.ssh/config
+-'  14  47  ~/.ssh/config
+-'  25  10  ~/.ssh/config
+-'  3  14  ~/.ssh/config
+-'  17  33  ~/.ssh/config
+-'  10  33  ~/.ssh/config
+-'  1  0  ~/.gitconfig
+-'  9  76  ~/.gitconfig
+-'  3  47  ~/.valet/config.json
+-'  14  0  ~/.valet
+-'  8  0  ~/.valet
+-'  28  69  ~/.bashrc
+-'  15  26  ~/.bashrc
+-'  22  0  ~/.bashrc
+-'  14  0  ~/.bashrc
+-'  5  0  ~/.bash_profile
+-'  6  0  ~/.bashrc
+-'  1  8  ~/workrepos/docker-lita/.gitignore
+-'  8  23  /usr/local/etc/php/7.0/php.ini
+-'  1  0  /usr/local/etc/php/7.0/php.ini
+-'  3  0  /usr/local/etc/php/7.0/php.ini
+-'  2  0  /usr/local/etc/php/7.0/php.ini
+-'  37  12  ~/.bashrc
+-'  17  12  ~/.bashrc
+-'  28  0  ~/Documents/hmisrzr/amazing.sql
+-'  1  24  ~/Documents/hmisrzr/amazing.sql
+-'  219819  198  ~/Documents/hmisrzr/amazing.sql
+-'  1  0  ~/Documents/wow.sql
+-'  8  18  /private/etc/my.cnf
+-'  1  21  ~/workrepos/transporter/filter.sh
+-'  8  50  ~/workrepos/transporter/filter.sh
+-'  37  2  ~/workrepos/transporter/README.md
+-'  1  0  ~/workrepos/transporter/README.md
+-'  10  0  ~/.gitconfig
+-'  11  2  ~/.gitconfig
+-'  30  0  ~/.bashrc
+-'  3  8  ~/Downloads/cemsites.tblk/client.conf
+-'  1  0  ~/Downloads/cemsites.tblk/client.conf
+-'  3  8  ~/Downloads/cemsitesvpn/client.conf
+-'  1  0  ~/Downloads/cemsitesvpn/client.conf
+-'  1  4  ~/workrepos/core/.node-version
+-'  16  6  ~/.bashrc
+-'  21  14  ~/.homestead/Homestead.yaml
+-'  1  0  ~/.homestead/Homestead.yaml
+-'  18  27  ~/.homestead/Homestead.yaml
+-'  51  0  ~/.ssh/config
+-'  44  28  ~/.ssh/config
+-'  3  0  ~/.profile
+-'  4  0  ~/.bash_profile
+-'  57  0  ~/.bashrc
+-'  13  6  ~/.bashrc
+-'  6  0  ~/.bash_profile
+-'  59  0  ~/.bashrc
+-'  46  0  ~/.ssh/config
 -'  20  85  /Library/LaunchDaemons/limit.maxfiles.plist
 -'  21  0  /Library/LaunchDaemons/limit.maxfiles.plist
 -'  30  28  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
 -'  1  0  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
 -'  1  0  ~/.gnupg/gpg-agent.conf
 -'  1  0  ~/.gpg-agent-info
--'  7  43  ~/.gitconfig
--'  1  0  ~/.gitconfig
--'  199  0  ~/.gnupg/gpg.conf
--'  112  0  ~/.gnupg/gpg.conf
--'  107  0  ~/.gnupg/gpg.conf
--'  1  0  ~/.gnupg/gpg.conf
--'  10  1  ~/.profile
--'  1  0  ~/.profile
--'  1  0  ~/.bashrc
--'  1  0  ~/.bash_profile
--'  15  0  ~/.bashrc
--'  22  36  ~/.bashrc
--'  7  0  ~/.bashrc
--'  36  0  ~/.bashrc
--'  34  0  ~/.bashrc
--'  24  0  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  2  4  ~/NetBeansProjects/ReadingFiles/.gitignore
--'  1  0  ~/NetBeansProjects/ReadingFiles/.gitignore
--'  2  4  ~/NetBeansProjects/DnDDiceRoller/.gitignore
--'  1  0  ~/NetBeansProjects/DnDDiceRoller/.gitignore
--'  1  0  ~/NetBeansProjects/ArrayLikeLists/.gitignore
--'  2  6  ~/NetBeansProjects/ArrayLikeLists/.gitignore
--'  50  0  ~/.bashrc
--'  1  0  ~/NetBeansProjects/gradingFun/.gitignore
--'  1  0  ~/Documents/open_arch_adp.txt
--'  102  0  ~/.ssh/known_hosts
--'  1  0  ~/.ssh/known_hosts
--'  27  0  ~/.bashrc
--'  4  0  ~/workrepos/live_teaching/.env
--'  1  0  ~/workrepos/live_teaching/.env
--'  5  0  ~/workrepos/live_teaching/.env
--'  3  0  ~/.bash_profile
--'  12  1  ~/.bash_profile
--'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (12).csv
--'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (4).csv
--'  1  0  ~/Downloads/TTMStudentInfoReport_05-12-2015 (2).csv
--'  1  0  ~/Downloads/TTMClass-LevelSummaryReport_05-12-2015 (1).csv
--'  3  789324  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
--'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.98627.sql
--'  22  0  ~/workrepos/apangea/.env
--'  21  25  ~/workrepos/apangea/.env
--'  1  0  ~/workrepos/apangea/.env
--'  8  9  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59471.sql
--'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59471.sql
--'  7  39  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59365.sql
--'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.59365.sql
--'  71  34  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  2  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  1  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  72  0  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  49  16  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  77  22  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  167  31  /private/var/folders/8b/bjjn6yfn0ms4dyw81qmbp_h40000gn/T/psql.edit.46495.sql
--'  11  0  /private/etc/hosts
--'  1  0  /private/etc/hosts
--'  9  0  /private/etc/hosts
--'  9  0  ~/workrepos/ttm-www-maxmind/.gitignore
--'  1  0  ~/workrepos/ttm-www-maxmind/.gitignore
--'  1  3  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/app/controllers/devise/registrations_controller.rb
--'  11  0  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
--'  30  2  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
--'  1  0  ~/.rvm/gems/ruby-2.0.0-p481@apangea/gems/devise-3.2.4/NERD_tree_1
--'  27  2  ~/personalRepos/woh_meetup_events_react/webpack.config.js
--'  1  0  ~/personalRepos/woh_meetup_events_react/webpack.config.js
--'  14  0  ~/personalRepos/woh_meetup_events_react/NERD_tree_1
--'  21  2  ~/personalRepos/woh_meetup_events_react/NERD_tree_1
--'  1  0  ~/personalRepos/woh_meetup_events_react/NERD_tree_1
--'  12  0  ~/workrepos/apangea/NERD_tree_1
--'  1  0  ~/workrepos/apangea/NERD_tree_1
--'  31  2  ~/workrepos/apangea/NERD_tree_1
--'  1  0  ~/workrepos/apangea/Procfile.NewRelic
--'  58  1  ~/workrepos/apangea/NERD_tree_1
--'  61  2  ~/workrepos/apangea/NERD_tree_1
--'  33  33  ~/.ttm_scalr_aliases.json
--'  1  0  ~/.ttm_scalr_aliases.json
--'  16  37  ~/.ttm_scalr_aliases.json
--'  15  47  ~/.ttm_scalr_aliases.json
--'  11  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
--'  5  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
--'  6  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
--'  1  0  ~/workrepos/apangea/.git/COMMIT_EDITMSG
--'  6  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
--'  3  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
--'  1  0  ~/workrepos/apangea/.git/rebase-merge/git-rebase-todo
--'  1  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
--'  10  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  11  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  12  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  9  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  4  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  1  0  ~/workrepos/reporting/.git/COMMIT_EDITMSG
--'  11  0  ~/workrepos/reporting/.git/rebase-merge/git-rebase-todo
 
 # History of marks within files (newest to oldest):
 
-> /Library/LaunchDaemons/limit.maxfiles.plist
-	"	20	85
-	^	20	86
-	.	20	78
-	+	20	78
-
-> ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
-	"	30	28
-	^	30	29
-	.	30	28
-	+	30	28
-
-> ~/.gnupg/gpg-agent.conf
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.gpg-agent-info
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/.gitconfig
-	"	7	43
-	^	7	44
-	.	7	43
-	+	7	43
-
-> ~/.gnupg/gpg.conf
-	"	199	0
-	^	199	0
-	.	199	0
-	+	199	0
-
-> ~/.profile
-	"	10	1
-	^	10	2
-	.	10	2
-	+	1	14
-	+	11	0
-	+	9	0
-	+	8	1
-	+	10	2
+> /private/etc/my.cnf
+	"	6	10
+	^	6	11
+	.	6	10
+	+	8	18
+	+	3	19
+	+	2	26
+	+	4	22
+	+	3	20
+	+	2	27
+	+	6	10
+	a	4	0
 
 > ~/.bashrc
-	"	1	0
-	^	15	0
-	.	15	0
+	"	45	42
+	^	45	43
+	.	45	42
 	+	1	9
 	+	1	14
 	+	1	34
@@ -270,7 +243,7 @@ $
 	+	1	0
 	+	1	6
 	+	1	0
-	+	28	0
+	+	32	0
 	+	1	53
 	+	1	102
 	+	1	34
@@ -305,42 +278,285 @@ $
 	+	1	0
 	+	1	88
 	+	1	0
-	+	26	109
+	+	30	109
 	+	1	0
-	+	26	110
-	+	50	0
-	+	35	45
-	+	36	46
+	+	30	110
+	+	55	0
+	+	39	45
+	+	40	46
 	+	5	40
-	+	53	0
-	+	22	46
+	+	58	0
+	+	26	46
 	+	5	0
-	+	22	37
-	+	14	14
+	+	26	37
+	+	18	14
+	+	19	0
+	+	13	0
+	+	28	24
+	+	14	37
+	+	28	37
+	+	16	6
+	+	17	0
+	+	17	0
+	+	37	0
+	+	59	0
+	+	15	5
+	+	28	69
+	+	15	26
+	+	28	70
+	+	59	0
+	+	45	42
+
+> ~/.ssh/config
+	"	7	0
+	^	23	23
+	.	23	11
+	+	17	16
+	+	20	10
+	+	52	0
+	+	46	0
+	+	43	24
+	+	44	28
+	+	50	16
+	+	51	0
+	+	7	5
+	+	8	10
+	+	9	10
+	+	10	33
+	+	11	0
+	+	17	10
+	+	17	22
+	+	17	33
+	+	17	0
+	+	1	13
+	+	5	2
+	+	4	2
+	+	3	2
+	+	5	34
+	+	6	0
+	+	7	17
+	+	21	0
+	+	25	10
+	+	12	19
+	+	15	13
+	+	13	38
+	+	14	2
+	+	16	0
+	+	14	48
 	+	15	0
+	+	13	11
+	+	23	17
+	+	4	8
+	+	27	19
+	+	30	10
+	+	23	11
+	+	48	23
+	+	27	0
+	+	23	11
+
+> ~/.ssh/known_hosts
+	"	141	0
+	.	142	0
+	+	103	0
+	+	132	0
+	+	138	0
+	+	142	0
+
+> /private/etc/hosts
+	"	12	0
+	.	12	0
+	+	11	0
+	+	22	26
+	+	13	26
+	+	14	27
+	+	17	33
+	+	18	15
+	+	14	0
+	+	17	0
+	+	14	0
+	+	17	0
+	+	18	0
+	+	13	0
+	+	14	0
+	+	17	0
+	+	18	0
+	+	13	0
+	+	19	37
+	+	20	32
+	+	21	14
+	+	14	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	13	0
+	+	14	34
+	+	15	13
+	+	20	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	20	0
+	+	12	0
+
+> /private/etc/vhosts
+	"	1	0
+
+> ~/.profile
+	"	5	71
+	^	5	72
+	.	5	71
+	+	1	14
+	+	12	0
+	+	10	0
+	+	9	1
+	+	11	2
+	+	14	0
+	+	5	71
 
 > ~/.bash_profile
 	"	1	0
-	^	12	2
-	.	12	2
+	^	6	2
+	.	6	0
 	+	1	18
 	+	2	0
 	+	3	61
-	+	13	0
+	+	7	0
 	+	6	1
-	+	7	2
-	+	8	3
-	+	9	2
-	+	10	3
-	+	11	4
-	+	12	2
+	+	6	2
+	+	6	3
+	+	6	2
+	+	6	3
+	+	6	4
+	+	6	0
+	+	6	0
 
-> ~/.ssh/config
-	"	24	0
-	.	25	0
-	+	10	16
-	+	13	10
-	+	25	0
+> ~/unstiall_vbox.sh
+	"	1	10
+	^	1	11
+	.	258	0
+	+	258	0
+
+> ~/workrepos/new-new-cornerstone/.ruby-version
+	"	1	0
+
+> ~/.gitconfig
+	"	1	0
+	^	9	14
+	.	9	14
+	+	7	43
+	+	11	0
+	+	10	100
+	+	10	0
+	+	9	101
+	+	9	17
+	+	9	14
+
+> ~/.valet/config.json
+	"	3	47
+	^	3	48
+	.	3	15
+	+	3	15
+
+> ~/workrepos/docker-lita/.gitignore
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> /usr/local/etc/php/7.0/php.ini
+	"	8	23
+	^	8	24
+	.	8	23
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	3	22
+	+	3	0
+	+	3	22
+	+	7	28
+	+	8	23
+
+> ~/Documents/hmisrzr/amazing.sql
+	"	28	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/wow.sql
+	"	1	0
+
+> ~/workrepos/transporter/filter.sh
+	"	1	21
+	^	1	22
+	.	1	21
+	+	8	50
+	+	1	21
+
+> ~/workrepos/transporter/README.md
+	"	37	2
+	^	37	3
+	.	37	2
+	+	38	0
+	+	37	2
+
+> ~/Downloads/cemsites.tblk/client.conf
+	"	3	8
+	^	3	9
+	.	3	8
+	+	3	8
+
+> ~/Downloads/cemsitesvpn/client.conf
+	"	3	8
+	^	3	9
+	.	3	8
+	+	3	8
+
+> ~/workrepos/core/.node-version
+	"	1	4
+	^	1	5
+	.	1	4
+	+	1	4
+
+> ~/.homestead/Homestead.yaml
+	"	21	14
+	^	18	28
+	.	18	28
+	+	13	26
+	+	17	14
+	+	18	27
+	+	14	27
+	+	18	28
+
+> /Library/LaunchDaemons/limit.maxfiles.plist
+	"	20	85
+	^	20	86
+	.	20	78
+	+	20	78
+
+> ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
+	"	30	28
+	^	30	29
+	.	30	28
+	+	30	28
+
+> ~/.gnupg/gpg-agent.conf
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.gpg-agent-info
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/.gnupg/gpg.conf
+	"	199	0
+	^	199	0
+	.	199	0
+	+	199	0
 
 > ~/NetBeansProjects/ReadingFiles/.gitignore
 	"	2	4
@@ -373,11 +589,6 @@ $
 
 > ~/Documents/open_arch_adp.txt
 	"	1	0
-
-> ~/.ssh/known_hosts
-	"	102	0
-	.	103	0
-	+	103	0
 
 > ~/workrepos/live_teaching/.env
 	"	4	0
@@ -445,11 +656,6 @@ $
 	+	72	0
 	+	59	8
 	+	71	107
-
-> /private/etc/hosts
-	"	11	0
-	.	11	0
-	+	11	0
 
 > ~/workrepos/ttm-www-maxmind/.gitignore
 	"	9	0
@@ -1482,90 +1688,3 @@ $
 	+	1	0
 	+	2	0
 	+	1	27
-
-> ~/workrepos/apangea/app/assets/javascripts/data_tables/OverviewReport.coffee
-	"	33	2
-
-> ~/workrepos/apangea/app/models/lesson_enrollment.rb
-	"	693	22
-	^	697	23
-	.	697	22
-	+	782	0
-	+	780	4
-	+	690	89
-	+	690	89
-	+	721	2
-	+	797	0
-	+	798	0
-	+	691	0
-	+	691	5
-	+	699	0
-	+	691	0
-	+	748	22
-	+	691	11
-	+	691	39
-	+	690	89
-	+	692	24
-	+	696	27
-	+	698	4
-	+	693	55
-	+	697	50
-	+	698	4
-	+	697	58
-	+	692	24
-	+	696	27
-	+	691	0
-	+	746	0
-	+	739	0
-	+	739	0
-	+	697	4
-	+	693	22
-	+	697	22
-
-> ~/workrepos/apangea/config/general_constants.yml
-	"	28	0
-
-> ~/workrepos/apangea/Procfile.Production
-	"	1	0
-
-> ~/workrepos/apangea/app/assets/javascripts/templates/dashboard/overview_report.slimbars
-	"	87	0
-
-> ~/workrepos/apangea/app/assets/javascripts/templates/dashboard/overview_report_classroom.slimbars
-	"	1	0
-
-> ~/workrepos/apangea/app/views/layouts/report.html.erb
-	"	26	5
-
-> ~/workrepos/apangea/app/assets/javascripts/dashboard/overview_report_widget.coffee
-	"	11	0
-
-> ~/workrepos/apangea/app/assets/javascripts/decorators/overview_report_decorator.coffee
-	"	29	6
-
-> ~/workrepos/apangea/app/views/reports/show.slim
-	"	11	39
-
-> ~/workrepos/apangea/app/controllers/reports_controller.rb
-	"	52	37
-	^	52	38
-	.	52	37
-	+	53	0
-	+	52	3
-	+	53	0
-	+	52	37
-
-> ~/workrepos/air_sideload_prototype/Main.swf
-	"	1	0
-
-> ~/workrepos/apangea/test/integration/multiple_classroom_integration_test.rb
-	"	82	26
-
-> ~/workrepos/apangea/app/models/historical_pathway.rb
-	"	1	0
-
-> ~/workrepos/apangea/app/views/classroom_enrollments/_historical_list.html.slim
-	"	1	16
-	^	1	17
-	.	1	16
-	+	1	16

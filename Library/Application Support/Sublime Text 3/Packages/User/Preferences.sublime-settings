@@ -9,6 +9,7 @@
 		"CVS",
 		"node_modules"
 	],
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -20,6 +21,8 @@
 		"html"
 	],
 	"margin": 2,
+	"scroll_past_end": true,
+	"show_encoding": true,
 	"show_minimap": false,
 	"spell_check": true,
 	"tab_size": 2,

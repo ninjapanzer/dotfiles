@@ -97,19 +97,20 @@ $
 
 # File marks:
 '0  6  10  /private/etc/my.cnf
-'1  45  42  ~/.bashrc
-'2  7  0  ~/.ssh/config
-'3  23  22  ~/.ssh/config
-'4  141  0  ~/.ssh/known_hosts
-'5  29  0  ~/.ssh/config
-'6  138  0  ~/.ssh/known_hosts
-'7  28  26  ~/.ssh/config
-'8  1  0  /private/etc/my.cnf
-'9  2  27  /private/etc/my.cnf
+'1  11  10  /private/etc/my.cnf
+'2  45  42  ~/.bashrc
+'3  7  0  ~/.ssh/config
+'4  23  22  ~/.ssh/config
+'5  141  0  ~/.ssh/known_hosts
+'6  29  0  ~/.ssh/config
+'7  138  0  ~/.ssh/known_hosts
+'8  28  26  ~/.ssh/config
+'9  1  0  /private/etc/my.cnf
 
 # Jumplist (newest first):
 -'  6  10  /private/etc/my.cnf
 -'  1  0  /private/etc/my.cnf
+-'  11  10  /private/etc/my.cnf
 -'  45  42  ~/.bashrc
 -'  1  0  ~/.bashrc
 -'  7  0  ~/.ssh/config
@@ -121,8 +122,8 @@ $
 -'  29  0  ~/.ssh/config
 -'  138  0  ~/.ssh/known_hosts
 -'  28  26  ~/.ssh/config
--'  2  27  /private/etc/my.cnf
--'  4  22  /private/etc/my.cnf
+-'  7  27  /private/etc/my.cnf
+-'  9  22  /private/etc/my.cnf
 -'  48  23  ~/.ssh/config
 -'  12  0  /private/etc/hosts
 -'  1  0  /private/etc/hosts
@@ -174,7 +175,7 @@ $
 -'  1  24  ~/Documents/hmisrzr/amazing.sql
 -'  219819  198  ~/Documents/hmisrzr/amazing.sql
 -'  1  0  ~/Documents/wow.sql
--'  8  18  /private/etc/my.cnf
+-'  13  18  /private/etc/my.cnf
 -'  1  21  ~/workrepos/transporter/filter.sh
 -'  8  50  ~/workrepos/transporter/filter.sh
 -'  37  2  ~/workrepos/transporter/README.md
@@ -205,22 +206,22 @@ $
 -'  30  28  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
 -'  1  0  ~/schoolrepos/CPT-180-27-S2016-Course-Info/.gitmodules
 -'  1  0  ~/.gnupg/gpg-agent.conf
--'  1  0  ~/.gpg-agent-info
 
 # History of marks within files (newest to oldest):
 
 > /private/etc/my.cnf
 	"	6	10
 	^	6	11
-	.	6	10
-	+	8	18
-	+	3	19
-	+	2	26
-	+	4	22
-	+	3	20
-	+	2	27
-	+	6	10
-	a	4	0
+	.	6	0
+	+	13	18
+	+	8	19
+	+	7	26
+	+	9	22
+	+	8	20
+	+	7	27
+	+	11	10
+	+	6	0
+	a	9	0
 
 > ~/.bashrc
 	"	45	42

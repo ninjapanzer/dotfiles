@@ -1,7 +1,7 @@
 [user]
 	email = paul.scarrone@gmail.com
 	name = Paul Scarrone
-	signingkey = 40E3159F
+	signingkey = 13D2A042
 [merge]
 	tool = sublime
 [alias]

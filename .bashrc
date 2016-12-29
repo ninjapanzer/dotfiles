@@ -37,8 +37,11 @@ fi
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-alias mysqlup='mysql.server start'
+alias mysqlup='brew unlink mysql56 && brew link mysql && mysql.server start --datadir=/usr/local/var/mysql'
 alias mysqldown='mysql.server stop'
+
+alias mysql56up='brew unlink mysql && brew link mysql56 && mysql.server start --datadir=/usr/local/var/mysql56'
+alias mysql56down='mysql.server stop'
 
 alias serve='python -m SimpleHTTPServer'
 alias phpserve='php -S localhost:8888 -t .'

@@ -1,5 +1,8 @@
 {
+	"always_show_minimap_viewport": false,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"draw_minimap": false,
+	"draw_minimap_border": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -10,6 +13,7 @@
 		"node_modules"
 	],
 	"font_size": 13,
+	"hide_minimap": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -23,7 +27,6 @@
 	"margin": 2,
 	"scroll_past_end": true,
 	"show_encoding": true,
-	"show_minimap": false,
 	"spell_check": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,

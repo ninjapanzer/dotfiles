@@ -1,0 +1,14 @@
+#!/bin/zsh
+FILES="$HOME/.alias"
+for f in $FILES/*.alias
+do
+# FAILSAFE #
+# Check if "$f" FILE exists and is a regular file and then only copy it #
+  if [ -f "$f" ]
+  then
+    echo "Loading Aliases for $(basename $f .alias) ..."
+    source $f
+  else
+    echo "Warning: Some problem with \"$f\""
+  fi
+done

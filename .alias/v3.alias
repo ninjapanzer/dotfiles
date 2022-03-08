@@ -1,1 +1,3 @@
 alias v3migrate="rake db:migrate"
+alias v3deployorder="git fetch; git log --no-walk -s --format=\"%S|%H|%aI\" --tags=\"tr-deployed-*\""
+

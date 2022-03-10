@@ -1,0 +1,2 @@
+alias remote_diff_files="git fetch; git diff --name-only origin/master...HEAD"
+

@@ -1,2 +1,3 @@
 alias remote_diff_files="git fetch; git diff --name-only origin/master...HEAD"
+alias rebase_remote="git fetch; git rebase --autostash origin/master"
 

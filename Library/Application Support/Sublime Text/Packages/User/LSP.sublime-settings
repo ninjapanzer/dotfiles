@@ -1,0 +1,26 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+  "clients": {
+        "sorbet": {
+            "enabled": true,
+            "command": [
+              "srb",
+              "tc",
+              "--typed",
+              "true",
+              "--enable-all-experimental-lsp-features",
+              "--lsp",
+              "--disable-watchman",
+              "."
+            ],
+            "selector": "source.ruby | text.html.ruby",
+            "initializationOptions": {
+              "diagnostics": true
+            },
+        },
+    "ruby":
+    {
+			"enabled": true
+		},
+  },
+}

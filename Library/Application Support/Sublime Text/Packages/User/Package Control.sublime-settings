@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Better RSpec",
+		"Git",
+		"LSP",
+		"MarkdownPreview",
+		"Origami",
+		"Package Control",
+		"PackageResourceViewer",
+	],
+}

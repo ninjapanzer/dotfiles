@@ -1,0 +1,13 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"translate_tabs_to_spaces": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"font_size": 12,
+	"save_on_focus_lost": true,
+	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": "not_on_caret",
+}

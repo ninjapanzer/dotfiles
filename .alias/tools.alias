@@ -1,0 +1,2 @@
+alias logseq="logseq > NUL 2>&1 &"
+

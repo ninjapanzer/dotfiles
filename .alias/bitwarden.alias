@@ -1,0 +1,12 @@
+passman() {
+  set +e
+  local matches=$(bw list items --search ${1} |
+          jq --raw-output '.[] | [.name, .login.username, .login.password] | @csv' | column -t -s ',');
+
+
+  OLDIFS=$IFS; IFS=$'\n';
+  for word in $(echo $matches | awk -F "[, ]+\"" '{print $1}'); do bw get totp $word; done
+  IFS=$OLDIFS
+  set -e
+}
+

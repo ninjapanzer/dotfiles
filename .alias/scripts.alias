@@ -1,0 +1,2 @@
+# NixOS rebuild with auto-backup
+alias os-build='bash ~/.scripts/os-build'

@@ -19,9 +19,9 @@
 
   programs.bash = {
     enable = true;
-    initExtra = [
-      "source $HOME/.alias/init"
-    ];
+    initExtra = ''
+      source $HOME/.alias/init
+    '';
   };
 
   nixpkgs = {
@@ -92,9 +92,7 @@
 
   programs.atuin = {
     enable = true;
-    daemon = {
-      enable = true;
-    };
+    # daemon.enable = true;
   };
 
 }

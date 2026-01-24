@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# os-build: nixos-rebuild wrapper with automatic vcsh backup
+# Usage: os-build [--no-backup] [nixos-rebuild args...]
+
+BACKUP_DIR="${BACKUP_DIR:-$HOME/.nixos}"
+NIXOS_DIR="${NIXOS_DIR:-/etc/nixos}"
+VCSH_REPO="${VCSH_REPO:-nixos}"
+NIXOS_REBUILD="${NIXOS_REBUILD:-sudo nixos-rebuild}"
+CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/nixos-backup/config.yaml"
+
+do_backup=true
+[[ "${1:-}" == "--no-backup" ]] && { do_backup=false; shift; }
+
+# Run nixos-rebuild (default: switch)
+$NIXOS_REBUILD "${@:-switch}"
+
+# Backup on success
+if $do_backup; then
+    mkdir -p "$BACKUP_DIR"
+
+    # Read files from config or use defaults
+    if command -v yq &>/dev/null && [[ -f "$CONFIG" ]]; then
+        mapfile -t files < <(yq -r '.files[]' "$CONFIG")
+    else
+        files=(configuration.nix flake.nix flake.lock hardware-configuration.nix home.nix packages.nix)
+    fi
+
+    # Copy files
+    for f in "${files[@]}"; do
+        [[ -f "$NIXOS_DIR/$f" ]] && cp "$NIXOS_DIR/$f" "$BACKUP_DIR/$f"
+    done
+
+    # Commit if vcsh available
+    if command -v vcsh &>/dev/null; then
+        for f in "${files[@]}"; do
+            [[ -f "$BACKUP_DIR/$f" ]] && vcsh "$VCSH_REPO" add "$BACKUP_DIR/$f" 2>/dev/null || true
+        done
+
+        if ! vcsh "$VCSH_REPO" diff --cached --quiet 2>/dev/null; then
+            vcsh "$VCSH_REPO" commit -m "$(printf 'NixOS backup: %s\nVersion: %s | Gen: %s' \
+                "$(date '+%Y-%m-%d %H:%M')" \
+                "$(nixos-version 2>/dev/null || echo unknown)" \
+                "$(readlink /nix/var/nix/profiles/system 2>/dev/null | grep -o '[0-9]*' || echo '?')")"
+            echo "Backup committed"
+        else
+            echo "No config changes to commit"
+        fi
+    fi
+fi

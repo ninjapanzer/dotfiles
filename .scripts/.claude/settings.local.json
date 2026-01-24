@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vcsh list:*)",
+      "Bash(nixos-version:*)",
+      "Bash(vcsh nixos status:*)",
+      "Bash(nix-shell:*)",
+      "Bash(vcsh nixos log:*)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(bash:*)",
+      "Bash(./.test/bats/bats/bin/bats:*)",
+      "Bash(make:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,4 +1,4 @@
-.PHONY: test test-setup test-clean
+.PHONY: test test-setup test-clean man
 
 test: test-setup
 	./.test/bats/bats/bin/bats *.bats
@@ -10,3 +10,6 @@ test-setup:
 
 test-clean:
 	bash clean-bats.sh
+
+man:
+	@man ./os-build.1

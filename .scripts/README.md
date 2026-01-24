@@ -7,13 +7,16 @@ Personal utility scripts.
 NixOS rebuild wrapper with automatic vcsh backup.
 
 ```bash
-os-build              # nixos-rebuild switch + backup to vcsh
-os-build --no-backup  # rebuild without backup
-os-build test         # nixos-rebuild test + backup
-os-build boot --flake .  # pass any args to nixos-rebuild
+os-build                # nixos-rebuild switch + backup
+os-build --no-backup    # rebuild without backup
+os-build test           # nixos-rebuild test + backup
+os-build --help         # show help
+os-build --rebuild-help # show nixos-rebuild --help
 ```
 
 Alias defined in `~/.alias/scripts.alias`.
+
+Man page: `man ~/.scripts/os-build.1` or `make man`
 
 Copies `/etc/nixos/*.nix` to `~/.nixos/` and commits to `vcsh nixos` repo with version info.
 

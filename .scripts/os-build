@@ -2,7 +2,6 @@
 set -euo pipefail
 
 # os-build: nixos-rebuild wrapper with automatic vcsh backup
-# Usage: os-build [--no-backup] [nixos-rebuild args...]
 
 BACKUP_DIR="${BACKUP_DIR:-$HOME/.nixos}"
 NIXOS_DIR="${NIXOS_DIR:-/etc/nixos}"
@@ -10,11 +9,57 @@ VCSH_REPO="${VCSH_REPO:-nixos}"
 NIXOS_REBUILD="${NIXOS_REBUILD:-sudo nixos-rebuild}"
 CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/nixos-backup/config.yaml"
 
+show_help() {
+    cat <<'EOF'
+os-build - nixos-rebuild wrapper with automatic vcsh backup
+
+USAGE
+    os-build [OPTIONS] [ACTION] [NIXOS-REBUILD-ARGS...]
+
+OPTIONS
+    --no-backup       Skip backup after rebuild
+    --help            Show this help
+    --rebuild-help    Show nixos-rebuild --help
+
+ACTIONS
+    switch            Build and activate (default)
+    boot              Build and set as boot default
+    test              Build and activate, don't add to boot
+    build             Build only
+    dry-build         Show what would be built
+    (any nixos-rebuild action)
+
+EXAMPLES
+    os-build                     # switch + backup
+    os-build --no-backup         # switch without backup
+    os-build test                # test + backup
+    os-build switch --flake .    # flake-based switch + backup
+
+ENVIRONMENT
+    BACKUP_DIR      Backup destination (default: ~/.nixos)
+    NIXOS_DIR       NixOS config source (default: /etc/nixos)
+    VCSH_REPO       vcsh repo name (default: nixos)
+
+CONFIG
+    ~/.config/nixos-backup/config.yaml
+
+SEE ALSO
+    os-build(1), nixos-rebuild(8)
+EOF
+    exit 0
+}
+
+# Handle help flags
+case "${1:-}" in
+    --help|-h) show_help ;;
+    --rebuild-help) exec nixos-rebuild --help ;;
+esac
+
 do_backup=true
 [[ "${1:-}" == "--no-backup" ]] && { do_backup=false; shift; }
 
 # Run nixos-rebuild (default: switch)
-$NIXOS_REBUILD "${@:-switch}"
+$NIXOS_REBUILD "${@:-switch}" "--sudo"
 
 # Backup on success
 if $do_backup; then

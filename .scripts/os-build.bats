@@ -43,21 +43,21 @@ teardown() {
     assert_success
     assert [ -f "$MOCK_LOG" ]
     run cat "$MOCK_LOG"
-    assert_output "nixos-rebuild switch"
+    assert_output "nixos-rebuild switch --sudo"
 }
 
 @test "passes arguments to nixos-rebuild" {
     run bash "$SCRIPT_DIR/os-build" test
     assert_success
     run cat "$MOCK_LOG"
-    assert_output "nixos-rebuild test"
+    assert_output "nixos-rebuild test --sudo"
 }
 
 @test "passes multiple arguments to nixos-rebuild" {
     run bash "$SCRIPT_DIR/os-build" switch --flake .
     assert_success
     run cat "$MOCK_LOG"
-    assert_output "nixos-rebuild switch --flake ."
+    assert_output "nixos-rebuild switch --flake . --sudo"
 }
 
 @test "copies config files to backup dir" {
@@ -78,7 +78,7 @@ teardown() {
     run bash "$SCRIPT_DIR/os-build" --no-backup test
     assert_success
     run cat "$MOCK_LOG"
-    assert_output "nixos-rebuild test"
+    assert_output "nixos-rebuild test --sudo"
 }
 
 @test "fails when nixos-rebuild fails" {
@@ -110,4 +110,17 @@ EOF
     run bash "$SCRIPT_DIR/os-build"
     assert_success
     assert [ -d "$BACKUP_DIR" ]
+}
+
+@test "--help shows usage" {
+    run bash "$SCRIPT_DIR/os-build" --help
+    assert_success
+    assert_output --partial "USAGE"
+    assert_output --partial "--no-backup"
+}
+
+@test "-h shows usage" {
+    run bash "$SCRIPT_DIR/os-build" -h
+    assert_success
+    assert_output --partial "USAGE"
 }

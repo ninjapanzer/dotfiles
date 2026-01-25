@@ -92,9 +92,10 @@
 
   programs.atuin = {
     enable = true;
-    daemon = {
-      enable = false;
-    };
+    settings = {
+      daemon.enabled = true;
+      daemon.systemd_socket = true;
+     };
     enableBashIntegration = true;
   };
 

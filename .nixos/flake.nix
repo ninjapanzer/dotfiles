@@ -20,6 +20,7 @@
         home-manager.nixosModules.home-manager
         {
           home-manager = {
+            backupFileExtension = "bak";
             extraSpecialArgs = { inherit inputs; };
             users.paulscoder = import ./home.nix;
           };

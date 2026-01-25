@@ -92,7 +92,10 @@
 
   programs.atuin = {
     enable = true;
-    # daemon.enable = true;
+    # daemon = {
+    #   enable = true;
+    # };
+    enableBashIntegration = true;
   };
 
 }

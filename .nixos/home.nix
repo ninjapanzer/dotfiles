@@ -67,7 +67,8 @@
     enable = true;
     settings.user.name = "Paul Scarrone";
     settings.user.email = "paul@scarrone.co";
-    settings.commit.gpgSign = false;
+    settings.user.signingKey = "DDB51C1FD6A478F0";
+    settings.commit.gpgSign = true;
   };
 
   programs.claude-code = {

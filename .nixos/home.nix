@@ -91,14 +91,14 @@
     };
   };
 
-  programs.atuin = {
-    enable = true;
-    settings = {
-      daemon.enabled = true;
-      daemon.systemd_socket = true;
-     };
-    enableBashIntegration = true;
-  };
+  # programs.atuin = {
+  #   enable = true;
+  #   settings = {
+  #     daemon.enabled = true;
+  #     daemon.systemd_socket = true;
+  #    };
+  #   enableBashIntegration = true;
+  # };
 
 }
 

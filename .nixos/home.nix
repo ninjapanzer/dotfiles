@@ -95,6 +95,11 @@
   programs.opencode = {
     enable = true;
     settings = {
+      lsp = {
+        rust = {};
+        ruby = {};
+        nixd = {};
+      };
       provider = {
         ollama = {
           npm = "@ai-sdk/openai-compatible";
@@ -105,9 +110,13 @@
           models = {
             qwen3-coder = {
               name = "qwen3-coder";
+              reasoning = true;
+              toll_call = true;
             };
             deepcoder = {
               name = "deep-coder";
+              reasoning = true;
+              toll_call = true;
             };
           };
         };

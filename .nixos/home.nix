@@ -92,6 +92,29 @@
     };
   };
 
+  programs.opencode = {
+    enable = true;
+    settings = {
+      provider = {
+        ollama = {
+          npm = "@ai-sdk/openai-compatible";
+          name = "Ollama";
+          options = {
+            baseURL = "http://localhost:11434/v1";
+          };
+          models = {
+            qwen3-coder = {
+              name = "qwen3-coder";
+            };
+            deepcoder = {
+              name = "deep-coder";
+            };
+          };
+        };
+      };
+    };
+  };
+
   # programs.atuin = {
   #   enable = true;
   #   settings = {

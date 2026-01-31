@@ -95,17 +95,17 @@
   programs.opencode = {
     enable = true;
     settings = {
-      lsp = {
-        nixd = {
-          command = "nixd";
-        };
-        ruby = {
-          command = "ruby-lsp";
-        };
-        rust = {
-          command = "rust-analyzer";
-        };
-      };
+      # lsp = {
+      #   nixd = {
+      #     command = "nixd";
+      #   };
+      #   ruby = {
+      #     command = "ruby-lsp";
+      #   };
+      #   rust = {
+      #     command = "rust-analyzer";
+      #   };
+      # };
       provider = {
         ollama = {
           npm = "@ai-sdk/openai-compatible";

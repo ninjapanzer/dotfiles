@@ -96,9 +96,15 @@
     enable = true;
     settings = {
       lsp = {
-        rust = {};
-        ruby = {};
-        nixd = {};
+        nixd = {
+          command = "nixd";
+        };
+        ruby = {
+          command = "ruby-lsp";
+        };
+        rust = {
+          command = "rust-analyzer";
+        };
       };
       provider = {
         ollama = {

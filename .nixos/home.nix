@@ -118,7 +118,7 @@
               name = "qwen3-coder";
               reasoning = true;
             };
-            "qwen2.5-coder" = {
+            "qwen2.5-coder:14b" = {
               name = "qwen2.5-coder:14b";
               reasoning = true;
             };

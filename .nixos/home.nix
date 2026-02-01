@@ -117,12 +117,14 @@
             qwen3-coder = {
               name = "qwen3-coder";
               reasoning = true;
-              toll_call = true;
             };
             deepcoder = {
-              name = "deep-coder";
+              name = "deepcoder";
               reasoning = true;
-              toll_call = true;
+            };
+            deepseek-coder-v2 = {
+              name = "rcpsy2022/deepseek-coder-v2";
+              reasoning = true;
             };
           };
         };

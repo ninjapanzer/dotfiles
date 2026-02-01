@@ -118,12 +118,8 @@
               name = "qwen3-coder";
               reasoning = true;
             };
-            deepcoder = {
-              name = "deepcoder";
-              reasoning = true;
-            };
-            deepseek-coder-v2 = {
-              name = "rcpsy2022/deepseek-coder-v2";
+            "qwen2.5-coder" = {
+              name = "qwen2.5-coder:14b";
               reasoning = true;
             };
           };

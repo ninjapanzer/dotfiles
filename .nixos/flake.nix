@@ -8,9 +8,22 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    beads = {
+      url = "github:steveyegge/beads?ref=v0.49.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgsUnstable, rhythmboxFixed, zen-browser, home-manager, ... }@inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    nixpkgsUnstable,
+    rhythmboxFixed,
+    zen-browser,
+    home-manager,
+    beads,
+    ...
+  }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };

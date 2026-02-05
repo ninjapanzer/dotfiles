@@ -12,6 +12,10 @@
       url = "github:steveyegge/beads?ref=v0.49.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    logseq = {
+      url = "github:Bad3r/nix-logseq-git-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -22,6 +26,7 @@
     zen-browser,
     home-manager,
     beads,
+    logseq,
     ...
   }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {

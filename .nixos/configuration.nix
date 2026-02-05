@@ -57,6 +57,19 @@
     variant = "";
   };
 
+  services.static-web-server = {
+    enable = true;
+    root = "/home/paulscoder/Public";  # Set the directory for your files
+    listen = "[::]:8787";
+    configuration = {
+      general = { 
+        directory-listing = true;
+        basic-auth = "username:$2y$10$O.2kywNvngurZFoJWMoj/eeAaUG98zZZkvxnCZGgKKbOme/3SMP7y";
+      };
+    };
+  };
+
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -135,6 +148,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+  networking.firewall.allowedTCPPorts = [ 8787 ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

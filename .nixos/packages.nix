@@ -2,5 +2,6 @@
   vim
   gnupg
   gitFull
+  static-web-server
 ]
 

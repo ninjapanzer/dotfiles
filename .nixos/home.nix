@@ -51,6 +51,7 @@
     pkgs.unzip
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.beads.packages."${pkgs.stdenv.hostPlatform.system}".default
+    inputs.logseq.packages."${pkgs.stdenv.hostPlatform.system}".default
   ];
 
   programs.gpg.enable = true;

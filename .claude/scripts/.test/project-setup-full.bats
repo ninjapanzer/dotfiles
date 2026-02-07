@@ -149,6 +149,12 @@ teardown() {
   assert_mock_called "bd migrate --yes"
 }
 
+@test "runs bd migrate sync beads-sync" {
+  run bash "$SCRIPT" "test-project" "$SEED_README" "git@github.com:user/repo.git"
+  assert_success
+  assert_mock_called "bd migrate sync beads-sync"
+}
+
 @test "runs bd sync" {
   run bash "$SCRIPT" "test-project" "$SEED_README" "git@github.com:user/repo.git"
   assert_success
@@ -188,6 +194,24 @@ teardown() {
   doctor_line=$(grep -n "bd doctor" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
   migrate_line=$(grep -n "bd migrate" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
   [ "$doctor_line" -lt "$migrate_line" ]
+}
+
+@test "bd migrate sync happens after bd migrate --yes" {
+  run bash "$SCRIPT" "test-project" "$SEED_README" "git@github.com:user/repo.git"
+  assert_success
+  local migrate_line sync_branch_line
+  migrate_line=$(grep -n "bd migrate --yes" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
+  sync_branch_line=$(grep -n "bd migrate sync beads-sync" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
+  [ "$migrate_line" -lt "$sync_branch_line" ]
+}
+
+@test "bd migrate sync happens before bd sync" {
+  run bash "$SCRIPT" "test-project" "$SEED_README" "git@github.com:user/repo.git"
+  assert_success
+  local sync_branch_line sync_line
+  sync_branch_line=$(grep -n "bd migrate sync beads-sync" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
+  sync_line=$(grep -n "bd sync$" "$MOCK_CALL_LOG" | head -1 | cut -d: -f1)
+  [ "$sync_branch_line" -lt "$sync_line" ]
 }
 
 # ── Output ──────────────────────────────────────────────────────────────────

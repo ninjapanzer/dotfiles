@@ -18,14 +18,33 @@ Workers run as isolated `claude --dangerously-skip-permissions` processes, NOT a
 - `--once`: Run one batch only, don't loop until empty
 - `--dry-run`: Show what would be processed without executing
 - `--batches=N`: Maximum batches before stopping (default: 10)
+- `--spec=<path>`: Path to a spec document to create beads from before processing
+
+### Spec Document Mode
+
+When `--spec=<path>` is provided, the orchestrator will:
+
+1. Read the spec document from the given path
+2. Parse requirements and create properly structured beads with:
+   - Acceptance criteria in description (testable checkbox items)
+   - Implementation details in notes (code-level guidance)
+3. Set up dependencies between related beads
+4. Then proceed with normal orchestration loop
+
+Spec documents can be markdown files, text files, or any readable format containing:
+- Problem statement or user story
+- Requirements or acceptance criteria
+- Technical context or constraints
+- Optional implementation suggestions
 
 ## Examples
 
 ```
-/beads-orchestrate           # Process up to 2 issues/batch, max 10 batches
-/beads-orchestrate --once    # Process one batch then stop
-/beads-orchestrate --dry-run # Show ready issues without processing
-/beads-orchestrate --max=3   # Process up to 3 issues in parallel
+/beads-orchestrate                          # Process up to 2 issues/batch, max 10 batches
+/beads-orchestrate --once                   # Process one batch then stop
+/beads-orchestrate --dry-run                # Show ready issues without processing
+/beads-orchestrate --max=3                  # Process up to 3 issues in parallel
+/beads-orchestrate --spec=./docs/feature.md # Create beads from spec, then process
 ```
 
 ## Execution

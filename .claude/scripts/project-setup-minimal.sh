@@ -125,6 +125,7 @@ step "bd init" bd init
 step "bd setup claude" bd setup claude
 step "bd hooks install" bd hooks install
 step "bd migrate --yes" bd migrate --yes
+step "bd migrate sync beads-sync" bd migrate sync beads-sync
 step "bd sync" bd sync
 
 # ── Commit beads files ───────────────────────────────────────────────────────

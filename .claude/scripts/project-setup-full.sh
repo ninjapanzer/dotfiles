@@ -111,7 +111,11 @@ step "Run bd doctor (read-only)" bd doctor || true
 
 step "Run bd migrate" bd migrate --yes || true
 
-# ── Step 9b: Sync database to JSONL ─────────────────────────────────────────
+# ── Step 9b: Configure sync-branch to keep working branch clean ─────────────
+
+step "Configure beads sync-branch" bd migrate sync beads-sync || true
+
+# ── Step 9c: Sync database to JSONL ─────────────────────────────────────────
 
 step "Run bd sync" bd sync || true
 

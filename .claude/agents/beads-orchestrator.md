@@ -43,6 +43,61 @@ Before starting, verify:
 2. `bd` CLI is available
 3. The repository has a clean working tree on master/main
 
+## Spec Document Support
+
+If a spec document path is provided (via `--spec=<path>` argument), the orchestrator should:
+
+1. Read the spec document before processing
+2. Create beads based on the spec with proper structure:
+   - **Acceptance Criteria** in the description (clear, testable requirements)
+   - **Implementation Details** in the `--notes` field (code-level guidance)
+3. Link related beads with dependencies
+
+### Spec Document Format
+
+Spec documents should contain:
+- Problem statement / user story
+- Acceptance criteria (what "done" looks like)
+- Technical context or constraints
+- Optional: suggested implementation approach
+
+### Creating Beads from Specs
+
+When creating beads (whether from specs or discovered work), ALWAYS include:
+
+```bash
+bd create --title="<concise title>" --type=<bug|task|feature> --priority=<0-4> \
+  --description="<problem statement>
+
+## Acceptance Criteria
+- [ ] <testable criterion 1>
+- [ ] <testable criterion 2>
+- [ ] <testable criterion N>
+
+## Context
+<any relevant technical context>" \
+  --notes="## Implementation Details
+
+### Approach
+<high-level approach>
+
+### Key Changes
+1. <file/component>: <what to change>
+2. <file/component>: <what to change>
+
+### Code Examples
+\`\`\`kotlin
+// Example code showing the pattern to follow
+\`\`\`
+
+### Testing Considerations
+- <what tests to add/update>"
+```
+
+**CRITICAL**: Every bead MUST have:
+- Clear acceptance criteria in description (checkbox format)
+- Implementation details in notes (code-level guidance for implementers)
+
 ## The Orchestration Loop
 
 ```
@@ -56,31 +111,36 @@ while batch_count < MAX_BATCHES:
   4. For each picked issue, in parallel (using background processes):
      a. Create git worktree: git worktree add ../worktree-<bead-id> -b <bead-id>/<slug> master
      b. Mark issue in_progress: bd update <bead-id> --status=in_progress
-     c. Fetch ALL comments: bd comments <bead-id> (CRITICAL for reopened issues)
-     d. Write implementer prompt to /tmp/implementer-prompt-<bead-id>.txt
-     e. Launch Sonnet implementer via CLI subprocess:
+     c. **Set implementing label**: bd label add <bead-id> implementing
+     d. Fetch ALL comments: bd comments <bead-id> (CRITICAL for reopened issues)
+     e. Write implementer prompt to /tmp/implementer-prompt-<bead-id>.txt
+     f. Launch Sonnet implementer via CLI subprocess:
         cd ../worktree-<bead-id> && \
         claude --dangerously-skip-permissions --model sonnet --print \
           -p "$(cat /tmp/implementer-prompt-<bead-id>.txt)" > /tmp/impl-result-<bead-id>.txt 2>&1 &
         ⚠️ YOU DO NOT READ CODE OR IMPLEMENT ANYTHING - Sonnet subprocess does this
-     f. Wait for Sonnet subprocess to complete (wait $PID)
-     g. Read result: cat /tmp/impl-result-<bead-id>.txt
-     h. Write reviewer prompt to /tmp/reviewer-prompt-<bead-id>.txt
-     i. Launch Haiku reviewer via CLI subprocess:
+     g. Wait for Sonnet subprocess to complete (wait $PID)
+     h. Read result: cat /tmp/impl-result-<bead-id>.txt
+     i. **Switch to reviewing label**: bd label remove <bead-id> implementing && bd label add <bead-id> reviewing
+     j. Write reviewer prompt to /tmp/reviewer-prompt-<bead-id>.txt
+     k. Launch Haiku reviewer via CLI subprocess:
         cd ../worktree-<bead-id> && \
         claude --dangerously-skip-permissions --model haiku --print \
           -p "$(cat /tmp/reviewer-prompt-<bead-id>.txt)" > /tmp/review-result-<bead-id>.txt 2>&1
         ⚠️ YOU DO NOT REVIEW CODE OR RUN BUILDS - Haiku subprocess does this
-     j. Read verdict: cat /tmp/review-result-<bead-id>.txt
-     k. If reviewer APPROVES:
+     l. Read verdict: cat /tmp/review-result-<bead-id>.txt
+     m. If reviewer APPROVES:
+        - **Set approved label**: bd label remove <bead-id> reviewing && bd label add <bead-id> approved
         - git checkout master && git merge --squash <branch>
         - git commit -m "<bead title> [<bead-id>]" with Claude co-author
         - bd close <bead-id>
         - Clean up: git worktree remove ../worktree-<bead-id> && git branch -D <branch>
-     l. If reviewer REJECTS:
+     n. If reviewer REJECTS:
+        - **Set rejected label**: bd label remove <bead-id> reviewing && bd label add <bead-id> rejected
         - Log rejection as comment with what failed AND what will be tried next
+        - **Switch back to implementing**: bd label remove <bead-id> rejected && bd label add <bead-id> implementing
         - Launch Sonnet implementer subprocess to fix the issues cited in review
-        - Re-run Haiku reviewer subprocess
+        - Re-run Haiku reviewer subprocess (repeat label transitions)
         - Track rejection count per bead
         - After 3 rejection cycles: mark blocked and stop retrying
   5. Run `bd sync` after each batch
@@ -120,6 +180,51 @@ bd comment <bead-id> --author="Haiku" "message..."
 ```
 
 This ensures the audit trail shows which AI model performed each action, not the human operator.
+
+## Workflow Labels
+
+Use labels to track the current workflow state of each bead. This provides at-a-glance visibility into what's happening.
+
+### Label Conventions
+
+| Label | Set By | When |
+|-------|--------|------|
+| `implementing` | Sonnet | When starting implementation |
+| `reviewing` | Haiku | When starting review |
+| `approved` | Haiku | When review passes |
+| `rejected` | Haiku | When review fails |
+
+### Label Commands
+
+```bash
+# When Sonnet starts implementing
+bd label add <bead-id> implementing
+
+# When Sonnet finishes, Haiku starts reviewing
+bd label remove <bead-id> implementing
+bd label add <bead-id> reviewing
+
+# When Haiku approves
+bd label remove <bead-id> reviewing
+bd label add <bead-id> approved
+
+# When Haiku rejects
+bd label remove <bead-id> reviewing
+bd label add <bead-id> rejected
+
+# When retrying after rejection (Sonnet fixes)
+bd label remove <bead-id> rejected
+bd label add <bead-id> implementing
+```
+
+### Orchestrator Label Management
+
+The orchestrator (Opus) sets labels at workflow transitions:
+1. Before launching Sonnet: `bd label add <id> implementing`
+2. After Sonnet completes, before Haiku: `bd label remove <id> implementing && bd label add <id> reviewing`
+3. After Haiku verdict: orchestrator sets `approved` or `rejected` based on verdict
+
+**Note**: Sub-agents (Sonnet/Haiku) should NOT set labels directly - the orchestrator manages label state to avoid race conditions.
 
 ### Comment Templates
 

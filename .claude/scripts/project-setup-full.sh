@@ -56,6 +56,9 @@ if [[ ! -f "$README_PATH" ]]; then
   exit 1
 fi
 
+# Resolve to absolute path before we cd into the project directory
+README_PATH="$(realpath "$README_PATH")"
+
 if [[ -d "$PROJECT_DIR" ]]; then
   echo "Error: Directory already exists: $PROJECT_DIR"
   exit 1
@@ -130,6 +133,32 @@ step "Commit beads setup artifacts" bash -c 'cd "'"$PROJECT_DIR"'" && git add -A
 # ── Step 12: Push beads setup ───────────────────────────────────────────────
 
 step "Push beads setup to remote" bash -c 'cd "'"$PROJECT_DIR"'" && git push' || true
+
+# ── Step 13: Prepare README for planning transformation ─────────────────────
+
+step "Preserve original brief" mv "$PROJECT_DIR/README.md" "$PROJECT_DIR/ORIGINAL_BRIEF.md" || true
+
+step "Create planning template" bash -c 'cat > "'"$PROJECT_DIR"'/README.md" << '\''EOF'\''
+# Project Name
+
+## Project Overview
+<!-- Brief description of what this project is -->
+
+## Goals
+<!-- What the project aims to achieve -->
+
+## Proposed Features
+<!-- High-level feature list -->
+
+## Technical Considerations
+<!-- Constraints, tech stack, architectural notes -->
+
+## Open Questions
+<!-- Decisions that need to be made -->
+
+---
+*See ORIGINAL_BRIEF.md for the source material*
+EOF' || true
 
 # ── Summary ──────────────────────────────────────────────────────────────────
 

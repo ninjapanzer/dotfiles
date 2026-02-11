@@ -4,5 +4,6 @@
   gitFull
   static-web-server
   nftables
+  dig
 ]
 

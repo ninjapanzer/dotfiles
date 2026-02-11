@@ -3,5 +3,6 @@
   gnupg
   gitFull
   static-web-server
+  nftables
 ]
 

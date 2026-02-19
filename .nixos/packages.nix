@@ -5,5 +5,6 @@
   static-web-server
   nftables
   dig
+  nvtopPackages.intel
 ]
 

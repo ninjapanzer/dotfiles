@@ -1,5 +1,17 @@
 { config, pkgs, inputs, ... }:
-
+let
+  beads = pkgs.buildGoModule rec {                                                                                                                                                                              
+    pname = "beads";                                                                                                                                                                                            
+    version = "0.55.4";                                                                                                                                                                                         
+    src = inputs.beads;                                                                                                                                                                                         
+    vendorHash = "sha256-cMvxGJBMUszIbWwBNmWe+ws4m3mfyEZgapxVYNYc5c4=";                                                                                                                                         
+    subPackages = [ "cmd/bd" ];                                                                                                                                                                                 
+    doCheck = false;                                                                                                                                                                                            
+    nativeBuildInputs = [ pkgs.git pkgs.pkg-config ];
+    buildInputs = [ pkgs.icu ];                                                                                                                                                                           
+    env.GOTOOLCHAIN = "auto";                                                                                                                                                                                   
+  };           
+in
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -50,8 +62,7 @@
     pkgs.chromaprint
     pkgs.unzip
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
-    inputs.beads.packages."${pkgs.stdenv.hostPlatform.system}".default
-    inputs.logseq.packages."${pkgs.stdenv.hostPlatform.system}".default
+    beads
   ];
 
   programs.gpg.enable = true;

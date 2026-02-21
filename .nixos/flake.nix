@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     beads = {
-      url = "github:steveyegge/beads?ref=v0.49.0";
+      url = "github:steveyegge/beads?ref=v0.55.4";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     logseq = {

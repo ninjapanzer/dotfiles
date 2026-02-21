@@ -6,5 +6,6 @@
   nftables
   dig
   nvtopPackages.intel
+  hut
 ]
 

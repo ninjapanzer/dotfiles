@@ -2,9 +2,9 @@
 let
   beads = pkgs.buildGoModule rec {                                                                                                                                                                              
     pname = "beads";                                                                                                                                                                                            
-    version = "0.55.4";                                                                                                                                                                                         
+    version = "0.59.0";                                                                                                                                                                                         
     src = inputs.beads;                                                                                                                                                                                         
-    vendorHash = "sha256-cMvxGJBMUszIbWwBNmWe+ws4m3mfyEZgapxVYNYc5c4=";                                                                                                                                         
+    vendorHash = "sha256-ygZPi56fVEHaEShGVGpObFkrLs1DHrM8i2Y4BktMmpA=";                                                                                                                                         
     subPackages = [ "cmd/bd" ];                                                                                                                                                                                 
     doCheck = false;                                                                                                                                                                                            
     nativeBuildInputs = [ pkgs.git pkgs.pkg-config ];

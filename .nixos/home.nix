@@ -62,6 +62,7 @@ in
     pkgs.chromaprint
     pkgs.unzip
     pkgs.logseq
+    pkgs.github-cli
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     beads
   ];

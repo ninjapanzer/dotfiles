@@ -61,6 +61,7 @@ in
     pkgs.vcsh
     pkgs.chromaprint
     pkgs.unzip
+    pkgs.logseq
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     beads
   ];

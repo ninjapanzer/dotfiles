@@ -32,6 +32,7 @@ in
   programs.bash = {
     enable = true;
     initExtra = ''
+      export GPG_TTY=$(tty)
       source $HOME/.alias/init
     '';
   };

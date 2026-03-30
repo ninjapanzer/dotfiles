@@ -4,6 +4,11 @@
     nixpkgsUnstable.url = "github:nixos/nixpkgs/nixos-unstable";
     rhythmboxFixed.url ="github:nixos/nixpkgs/986a0a1a1905b3227b28db009619321105c62464";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    kwike = {
+      url = "sourcehut:~ninjapanzer/kwike";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    opencode.url = "github:anomalyco/opencode";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +29,8 @@
     nixpkgsUnstable,
     rhythmboxFixed,
     zen-browser,
+    kwike,
+    opencode,
     home-manager,
     beads,
     logseq,

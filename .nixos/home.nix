@@ -66,6 +66,8 @@ in
     pkgs.github-cli
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     beads
+    inputs.opencode.packages."${pkgs.stdenv.hostPlatform.system}".default
+    inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
   ];
 
   programs.gpg.enable = true;
@@ -105,42 +107,6 @@ in
       window_padding_width = 10;
       background_opacity = "0.5";
       background_blur = 5;
-    };
-  };
-
-  programs.opencode = {
-    enable = true;
-    settings = {
-      # lsp = {
-      #   nixd = {
-      #     command = "nixd";
-      #   };
-      #   ruby = {
-      #     command = "ruby-lsp";
-      #   };
-      #   rust = {
-      #     command = "rust-analyzer";
-      #   };
-      # };
-      provider = {
-        ollama = {
-          npm = "@ai-sdk/openai-compatible";
-          name = "Ollama";
-          options = {
-            baseURL = "http://localhost:11434/v1";
-          };
-          models = {
-            qwen3-coder = {
-              name = "qwen3-coder";
-              reasoning = true;
-            };
-            "qwen2.5-coder:14b" = {
-              name = "qwen2.5-coder:14b";
-              reasoning = true;
-            };
-          };
-        };
-      };
     };
   };
 

@@ -206,11 +206,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775271735,
-        "narHash": "sha256-GaM2zr7BlBkEFXXi407EuaKdj+Azyb6pakeg3QXZHqo=",
+        "lastModified": 1775442909,
+        "narHash": "sha256-qJrjwgWnYkeJROqmRDc3qoJYX7YRSlWTekvo+LgnAfQ=",
         "owner": "~ninjapanzer",
         "repo": "kwike",
-        "rev": "0910b14db0d4b2a99941a1c384ac4b483b9fb96f",
+        "rev": "12241308b6e77567c6921e00de60727617e03d7c",
         "type": "sourcehut"
       },
       "original": {

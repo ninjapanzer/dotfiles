@@ -1,17 +1,4 @@
 { config, pkgs, inputs, ... }:
-let
-  beads = pkgs.buildGoModule rec {                                                                                                                                                                              
-    pname = "beads";                                                                                                                                                                                            
-    version = "0.59.0";                                                                                                                                                                                         
-    src = inputs.beads;                                                                                                                                                                                         
-    vendorHash = "sha256-ygZPi56fVEHaEShGVGpObFkrLs1DHrM8i2Y4BktMmpA=";                                                                                                                                         
-    subPackages = [ "cmd/bd" ];                                                                                                                                                                                 
-    doCheck = false;                                                                                                                                                                                            
-    nativeBuildInputs = [ pkgs.git pkgs.pkg-config ];
-    buildInputs = [ pkgs.icu ];                                                                                                                                                                           
-    env.GOTOOLCHAIN = "auto";                                                                                                                                                                                   
-  };           
-in
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -65,8 +52,6 @@ in
     pkgs.logseq
     pkgs.github-cli
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
-    beads
-    inputs.opencode.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
   ];
 

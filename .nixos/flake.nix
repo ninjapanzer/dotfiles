@@ -8,13 +8,8 @@
       url = "sourcehut:~ninjapanzer/kwike";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    opencode.url = "github:anomalyco/opencode";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    beads = {
-      url = "github:steveyegge/beads?ref=v0.59.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     logseq = {
@@ -30,9 +25,7 @@
     rhythmboxFixed,
     zen-browser,
     kwike,
-    opencode,
     home-manager,
-    beads,
     logseq,
     ...
   }@inputs: {

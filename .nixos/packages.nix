@@ -7,5 +7,6 @@
   dig
   nvtopPackages.intel
   hut
+  uv
 ]
 

@@ -16,6 +16,10 @@
       url = "github:Bad3r/nix-logseq-git-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    claude-code = {
+      url = "github:sadjow/claude-code-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -27,6 +31,7 @@
     kwike,
     home-manager,
     logseq,
+    claude-code,
     ...
   }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {

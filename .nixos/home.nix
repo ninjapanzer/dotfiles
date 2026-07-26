@@ -25,6 +25,7 @@
   };
 
   nixpkgs = {
+    overlays = [ inputs.claude-code.overlays.default ];
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);

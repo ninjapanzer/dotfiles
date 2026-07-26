@@ -55,6 +55,7 @@
     pkgs.github-cli
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
+    pkgs.bazelisk
   ];
 
   programs.gpg.enable = true;

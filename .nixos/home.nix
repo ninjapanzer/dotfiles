@@ -56,6 +56,9 @@
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
     pkgs.bazelisk
+    (pkgs.writeShellScriptBin "bazel" ''exec ${pkgs.bazelisk}/bin/bazelisk "$@"'')
+    pkgs.binutils
+    pkgs.gcc
   ];
 
   programs.gpg.enable = true;

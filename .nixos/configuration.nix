@@ -24,7 +24,13 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    substituters = [ "https://ninjapanzer-cache.cachix.org" ];
+    trusted-public-keys = [
+      "ninjapanzer-cache.cachix.org-1:sPCdflcdjPe+rwBsCzY+JqlxIewhH9ktgAeYlbypj2w="
+    ];
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";

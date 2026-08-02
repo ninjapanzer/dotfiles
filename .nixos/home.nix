@@ -78,6 +78,14 @@
     settings.user.email = "paul@scarrone.co";
     settings.user.signingKey = "DDB51C1FD6A478F0";
     settings.commit.gpgSign = true;
+    settings.credential.helper = "libsecret";
+    settings.sendemail = {
+      smtpserver = "127.0.0.1";
+      smtpserverport = 1025;
+      smtpencryption = "ssl";
+      smtpuser = "paulscoder@tutanota.com";
+      smtpsslcertpath = "";
+    };
   };
 
   programs.claude-code = {

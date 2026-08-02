@@ -80,6 +80,7 @@
     settings.commit.gpgSign = true;
     settings.credential.helper = "libsecret";
     settings.sendemail = {
+      from = "paul@scarrone.co";
       smtpserver = "127.0.0.1";
       smtpserverport = 1025;
       smtpencryption = "ssl";

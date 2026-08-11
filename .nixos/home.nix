@@ -53,6 +53,7 @@
     pkgs.unzip
     pkgs.logseq
     pkgs.github-cli
+    inputs.burl.packages.${pkgs.system}.default
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
     pkgs.bazelisk

@@ -4,6 +4,7 @@
     nixpkgsUnstable.url = "github:nixos/nixpkgs/nixos-unstable";
     rhythmboxFixed.url ="github:nixos/nixpkgs/986a0a1a1905b3227b28db009619321105c62464";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    burl.url = "git+https://git.sr.ht/~ninjapanzer/burl?ref=refs/tags/v0.1.0";
     kwike = {
       url = "sourcehut:~ninjapanzer/kwike";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,6 +28,7 @@
     nixpkgs,
     nixpkgsUnstable,
     rhythmboxFixed,
+    burl,
     zen-browser,
     kwike,
     home-manager,

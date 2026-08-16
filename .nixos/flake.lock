@@ -6,16 +6,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1786882986,
-        "narHash": "sha256-4XK3usdUKk8A8fp8ltpBQX6421DI7ByCK/jHzUpzkMk=",
-        "ref": "refs/tags/v1.1.2",
-        "rev": "41b8120e239f47b4f3bce3d2cf85f9e1e158be92",
-        "revCount": 184,
+        "lastModified": 1786905576,
+        "narHash": "sha256-GMMpJ8pIIGN0hP1WxsOEkydw6U5vwr7Avjj/+pHwb9k=",
+        "ref": "refs/tags/v1.3.0",
+        "rev": "943efbf0ac05fa4c131ff3004688e53e2698784d",
+        "revCount": 217,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       },
       "original": {
-        "ref": "refs/tags/v1.1.2",
+        "ref": "refs/tags/v1.3.0",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       }

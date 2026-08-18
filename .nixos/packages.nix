@@ -8,5 +8,6 @@
   nvtopPackages.intel
   hut
   uv
+  tmux
 ]
 

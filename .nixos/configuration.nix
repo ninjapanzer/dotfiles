@@ -26,7 +26,7 @@
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
-    substituters = [ "https://ninjapanzer-cache.cachix.org" ];
+    substituters = [ "https://ninjapanzer-cache.cachix.org" "https://ninjapanzer-builds.cachix.org"];
     trusted-public-keys = [
       "ninjapanzer-cache.cachix.org-1:sPCdflcdjPe+rwBsCzY+JqlxIewhH9ktgAeYlbypj2w="
     ];

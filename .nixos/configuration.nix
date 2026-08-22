@@ -29,6 +29,7 @@
     substituters = [ "https://ninjapanzer-cache.cachix.org" "https://ninjapanzer-builds.cachix.org"];
     trusted-public-keys = [
       "ninjapanzer-cache.cachix.org-1:sPCdflcdjPe+rwBsCzY+JqlxIewhH9ktgAeYlbypj2w="
+      "ninjapanzer-builds.cachix.org-1:fx3Rv4nQ1R39em5QiNk/FFV1aQ3B+CSJhwNM/m4nv9g="
     ];
   };
 

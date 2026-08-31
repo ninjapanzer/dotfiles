@@ -56,6 +56,7 @@
     inputs.burl.packages.${pkgs.system}.default
     inputs.burl.packages.${pkgs.system}.burl-mcp
     inputs.burl.packages.${pkgs.system}.burl-backend
+    inputs.beamlet.packages.${pkgs.system}.beamlet
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.kwike.packages."${pkgs.stdenv.hostPlatform.system}".default
     pkgs.bazelisk

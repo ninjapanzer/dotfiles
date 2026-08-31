@@ -51,6 +51,14 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # beamlet tool store: the binary is immutable in the store, but its body
+  # (tools/, workspace/, build/, trust/) is stateful operator data. A
+  # tmpfiles rule creates the root; the operator seeds tools/ themselves.
+  systemd.tmpfiles.rules = [
+    "d /var/lib/beamlet 0755 paulscoder users -"
+  ];
+  environment.variables.BEAMLET_ROOT = "/var/lib/beamlet";
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 

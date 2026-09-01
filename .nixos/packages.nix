@@ -8,6 +8,7 @@
   nvtopPackages.intel
   hut
   uv
+  pv
   tmux
   cachix
 ]

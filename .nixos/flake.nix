@@ -10,6 +10,10 @@
       url = "sourcehut:~ninjapanzer/kwike";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    keepawake = {
+      url = "sourcehut:~ninjapanzer/keepawake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";

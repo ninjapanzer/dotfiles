@@ -280,6 +280,26 @@
         "type": "github"
       }
     },
+    "keepawake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788392762,
+        "narHash": "sha256-BGTnCTX3ZGl5qeqEKWBz5P02IXHBzsqNO4wJXrmeU0E=",
+        "owner": "~ninjapanzer",
+        "repo": "keepawake",
+        "rev": "5bf2443e5b298076fc7b4b48b3ed1345d18baa2f",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~ninjapanzer",
+        "repo": "keepawake",
+        "type": "sourcehut"
+      }
+    },
     "kwike": {
       "inputs": {
         "claude-code-nix": "claude-code-nix",
@@ -627,6 +647,7 @@
         "burl": "burl",
         "claude-code": "claude-code",
         "home-manager": "home-manager",
+        "keepawake": "keepawake",
         "kwike": "kwike",
         "logseq": "logseq",
         "nixpkgs": "nixpkgs_4",

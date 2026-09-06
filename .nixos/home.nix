@@ -106,6 +106,10 @@
     enable = true;
   };
 
+  programs.codex = {
+    enable = true;
+  };
+
   programs.direnv = {
     enable = true;
   };

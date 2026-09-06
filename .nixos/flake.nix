@@ -26,6 +26,9 @@
       url = "github:sadjow/claude-code-nix/7f0aeb2f0c6cf1ca2bf3b0b76b823b24b04b5b21";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    codex-cli = {
+      url = "github:sadjow/codex-cli-nix";
+    };
   };
 
   outputs = {
@@ -40,6 +43,7 @@
     home-manager,
     logseq,
     claude-code,
+    codex-cli,
     ...
   }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {

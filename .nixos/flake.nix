@@ -28,6 +28,7 @@
     };
     codex-cli = {
       url = "github:sadjow/codex-cli-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 

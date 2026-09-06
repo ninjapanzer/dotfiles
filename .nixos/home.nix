@@ -3,7 +3,6 @@
 
   imports = [ inputs.keepawake.homeModules.default ];
 
-  programs.keepawake.enable = true;
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
 
@@ -18,7 +17,13 @@
   home.stateVersion = "25.11";
 
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs.home-manager = {
+    enable = true;
+  };
+
+  programs.keepawake = {
+    enable = true;
+  };
 
   programs.bash = {
     enable = true;

@@ -11,5 +11,6 @@
   pv
   tmux
   cachix
+  minisign
 ]
 

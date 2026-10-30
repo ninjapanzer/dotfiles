@@ -119,6 +119,7 @@
 
   programs.zellij = {
     enable = true;
+    package = inputs.nixpkgsUnstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zellij;
   };
 
   programs.kitty = {

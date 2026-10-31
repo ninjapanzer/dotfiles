@@ -21,20 +21,21 @@
     },
     "burl": {
       "inputs": {
+        "claude-code-nix": "claude-code-nix",
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1792326238,
-        "narHash": "sha256-QXRxWnI1DY1RxuPIEc6J229zZhyYaf3yO9jRw3IpZec=",
-        "ref": "refs/tags/v1.66.2",
-        "rev": "53b9474e9251de8a2568900b849b478be101dc8c",
-        "revCount": 2231,
+        "lastModified": 1793400801,
+        "narHash": "sha256-R0/s242dCNn/EPd/FtYOk0db8peqEuEDcGOJE2mioz4=",
+        "ref": "refs/tags/v1.67.0",
+        "rev": "80dcaf9e4536785e16d4d3167785ebbddeb30795",
+        "revCount": 2315,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       },
       "original": {
-        "ref": "refs/tags/v1.66.2",
+        "ref": "refs/tags/v1.67.0",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       }
@@ -61,6 +62,23 @@
       }
     },
     "claude-code-nix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793134901,
+        "narHash": "sha256-thSjW2BhZFECtNX152v67/dbR0vKYnCfFRTQq4JINCo=",
+        "owner": "sadjow",
+        "repo": "claude-code-nix",
+        "rev": "1ce054c09e8a10c4480c281178ff7e2a737aec17",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sadjow",
+        "repo": "claude-code-nix",
+        "rev": "1ce054c09e8a10c4480c281178ff7e2a737aec17",
+        "type": "github"
+      }
+    },
+    "claude-code-nix_2": {
       "inputs": {
         "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_3"
@@ -341,7 +359,7 @@
     },
     "kwike": {
       "inputs": {
-        "claude-code-nix": "claude-code-nix",
+        "claude-code-nix": "claude-code-nix_2",
         "flake-utils": "flake-utils_3",
         "nixpkgs": [
           "nixpkgs"

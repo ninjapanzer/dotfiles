@@ -30,6 +30,21 @@
     initExtra = ''
       export GPG_TTY=$(tty)
       source $HOME/.alias/init
+      # Claude Code loads the burl mod, told which notebook's MCP server to use.
+      claude() {
+        local server=""
+        case "$PWD" in
+          "$HOME"/repos/burl*)        server=burl-burl ;;
+          "$HOME"/repos/adaptive-ui*) server=burl-aperture ;;
+          "$HOME"/repos/beamlet*)     server=burl-beamlet ;;
+          "$HOME"/repos/solar*)       server=burl-solar ;;
+        esac
+        if [ -n "$server" ]; then
+          BURL_MCP_SERVER=$server command claude --plugin-dir "$HOME/repos/burl/claude-mod" "$@"
+        else
+          command claude "$@"
+        fi
+      }
     '';
   };
 

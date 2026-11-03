@@ -5,16 +5,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1793565943,
-        "narHash": "sha256-/DCX62vYkl9TG8o2WGXKsIPaNLcvwSJJdfhQaYUCqME=",
-        "ref": "refs/tags/v0.7.0",
-        "rev": "56f85914bfc8cbde9397a1f8261baf9ed96ac458",
-        "revCount": 87,
+        "lastModified": 1793714065,
+        "narHash": "sha256-anX/nvV5npTi1+hid2vF6gipnvZpeViyIojipUCm0l4=",
+        "ref": "refs/tags/v0.8.0",
+        "rev": "7cecafe5a83c7e9c55ea537bdecc3ba6f1c3a34b",
+        "revCount": 93,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/beamlet"
       },
       "original": {
-        "ref": "refs/tags/v0.7.0",
+        "ref": "refs/tags/v0.8.0",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/beamlet"
       }

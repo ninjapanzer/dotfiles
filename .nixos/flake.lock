@@ -5,16 +5,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1793714065,
-        "narHash": "sha256-anX/nvV5npTi1+hid2vF6gipnvZpeViyIojipUCm0l4=",
-        "ref": "refs/tags/v0.8.0",
-        "rev": "7cecafe5a83c7e9c55ea537bdecc3ba6f1c3a34b",
-        "revCount": 93,
+        "lastModified": 1793804688,
+        "narHash": "sha256-vbvL3POXN7jP9Eo66//vTELnVvH1Dl2YP6L3AuVun4c=",
+        "ref": "refs/tags/v0.8.1",
+        "rev": "788c52598d61d637c135d970b31630f981c5b876",
+        "revCount": 98,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/beamlet"
       },
       "original": {
-        "ref": "refs/tags/v0.8.0",
+        "ref": "refs/tags/v0.8.1",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/beamlet"
       }
@@ -26,16 +26,16 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1793582524,
-        "narHash": "sha256-tTGHQ6y/dJ+xvqrEJBfqF2bX4ep75sYHTsTlUKYHjbE=",
-        "ref": "refs/tags/v1.70.0",
-        "rev": "672694ab83ca61c26edd752b6966bf5c1c8aafd0",
-        "revCount": 2478,
+        "lastModified": 1793770595,
+        "narHash": "sha256-ghhHNaJAuQ+d25VfWvApIA6hk88W/QtHthN7HC5pKVo=",
+        "ref": "refs/tags/v1.70.1",
+        "rev": "aa4b4901fe71f23d34892593dde4013d8acbacad",
+        "revCount": 2486,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       },
       "original": {
-        "ref": "refs/tags/v1.70.0",
+        "ref": "refs/tags/v1.70.1",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       }

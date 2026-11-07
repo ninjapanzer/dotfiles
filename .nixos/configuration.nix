@@ -85,7 +85,14 @@
   };
 
   programs.ssh.extraConfig = ''
-    Include /home/paulscoder/.ssh/config.d/buildbox
+    Host buildbox
+      User nixbuilder
+      IdentityFile /home/paulscoder/.ssh/buildbox_ed25519
+      IdentitiesOnly yes
+      HostKeyAlias buildbox
+      UserKnownHostsFile /home/paulscoder/.ssh/buildbox.known_hosts
+      StrictHostKeyChecking yes
+      ProxyCommand ${pkgs.socat}/bin/socat - TCP:$(cat /home/paulscoder/.ssh/buildbox.addr):%p,connect-timeout=5
   '';
   nix.distributedBuilds = true;
   nix.buildMachines = [{

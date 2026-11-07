@@ -107,7 +107,7 @@
     enable = true;
     settings.user.name = "Paul Scarrone";
     settings.user.email = "paul@scarrone.co";
-    settings.user.signingKey = "DDB51C1FD6A478F0";
+    settings.user.signingKey = "BC3E62DF1F32BF65";
     settings.commit.gpgSign = true;
     settings.credential.helper = "libsecret";
     settings.sendemail = {

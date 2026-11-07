@@ -84,6 +84,22 @@
     };
   };
 
+  programs.ssh.extraConfig = ''
+    Include /home/paulscoder/.ssh/config.d/buildbox
+  '';
+  nix.distributedBuilds = true;
+  nix.buildMachines = [{
+    hostName = "buildbox";
+    sshUser = "nixbuilder";
+    protocol = "ssh-ng";
+    sshKey = "/home/paulscoder/.ssh/buildbox_ed25519";
+    system = "x86_64-linux";
+    maxJobs = 8;
+    speedFactor = 2;
+    supportedFeatures = [ "big-parallel" "benchmark" ];
+  }];
+  nix.settings.builders-use-substitutes = true;
+
 
   # Enable CUPS to print documents.
   services.printing.enable = true;

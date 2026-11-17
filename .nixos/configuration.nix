@@ -118,7 +118,7 @@
     protocol = "ssh-ng";
     sshKey = "/home/paulscoder/.ssh/buildbox_ed25519";
     system = "x86_64-linux";
-    maxJobs = 8;
+    maxJobs = 16;
     speedFactor = 2;
     supportedFeatures = [ "big-parallel" "benchmark" ];
   }{

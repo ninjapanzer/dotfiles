@@ -93,6 +93,15 @@
       UserKnownHostsFile /home/paulscoder/.ssh/buildbox.known_hosts
       StrictHostKeyChecking yes
       ProxyCommand ${pkgs.socat}/bin/socat - TCP:$(cat /home/paulscoder/.ssh/buildbox.addr):%p,connect-timeout=5
+    Host deskbox
+      HostName 192.168.1.44
+      User samuraipanzer
+      IdentityFile /home/paulscoder/.ssh/deskbox_builder_ed25519
+      IdentitiesOnly yes
+      HostKeyAlias deskbox
+      UserKnownHostsFile /home/paulscoder/.ssh/deskbox.known_hosts
+      StrictHostKeyChecking yes
+      ConnectTimeout 3
   '';
   nix.distributedBuilds = true;
   nix.buildMachines = [{
@@ -103,6 +112,15 @@
     system = "x86_64-linux";
     maxJobs = 8;
     speedFactor = 2;
+    supportedFeatures = [ "big-parallel" "benchmark" ];
+  }{
+    hostName = "deskbox";
+    sshUser = "samuraipanzer";
+    protocol = "ssh-ng";
+    sshKey = "/home/paulscoder/.ssh/deskbox_builder_ed25519";
+    system = "x86_64-linux";
+    maxJobs = 1;          # raised once a full peak-RSS run is measured (AC 2)
+    speedFactor = 4;      # above the buildbox's 2, so nix prefers the desktop
     supportedFeatures = [ "big-parallel" "benchmark" ];
   }];
   nix.settings.builders-use-substitutes = true;

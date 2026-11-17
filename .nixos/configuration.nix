@@ -31,6 +31,14 @@
       "ninjapanzer-cache.cachix.org-1:sPCdflcdjPe+rwBsCzY+JqlxIewhH9ktgAeYlbypj2w="
       "ninjapanzer-builds.cachix.org-1:fx3Rv4nQ1R39em5QiNk/FFV1aQ3B+CSJhwNM/m4nv9g="
     ];
+    min-free = 50 * 1024 * 1024 * 1024; # 50GB
+    max-free = 120 * 1024 * 1024 * 1024; # 120GB
+  };
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";  # also drop profile generations older than 14 days
   };
 
   # Set your time zone.

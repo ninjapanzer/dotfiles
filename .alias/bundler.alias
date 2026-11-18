@@ -1,3 +1,0 @@
-alias bundle-local="bundle config set --local path 'vendor/bundle' && bundle install"
-alias be="bundle exec"
-

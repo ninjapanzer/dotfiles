@@ -1,2 +1,0 @@
-alias rubocop_of_diff="remote_diff_files | xargs bundle exec rubocop"
-

@@ -13,6 +13,8 @@ with pkgs; [
   inputs.wavelet.packages.${sys}.default
   inputs.zen-browser.packages.${sys}.default
   cachix
+  vcsh
+  yq-go
   bitwarden-desktop
   pciutils
   usbutils

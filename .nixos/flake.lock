@@ -23,19 +23,21 @@
       "inputs": {
         "claude-code-nix": "claude-code-nix",
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs_2"
+        "kwik-e-mart": "kwik-e-mart",
+        "nixpkgs": "nixpkgs_2",
+        "nixpkgs-buildbox": "nixpkgs-buildbox"
       },
       "locked": {
-        "lastModified": 1794011817,
-        "narHash": "sha256-RsaS860bIdqMxZpu5xybkAHdBWbbIoluaZrgbZOGjg8=",
-        "ref": "refs/tags/v1.72.0",
-        "rev": "ecbcbf2afb789eca010fcaff86146120c9901439",
-        "revCount": 2522,
+        "lastModified": 1794890704,
+        "narHash": "sha256-KoUEwV7+NdtoAUcMmf0Jht79L33A2EmfcvtBWBrFbRM=",
+        "ref": "refs/tags/v1.73.0",
+        "rev": "94aa561248ab6cca39531352e869fd13f7555fe0",
+        "revCount": 2750,
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       },
       "original": {
-        "ref": "refs/tags/v1.72.0",
+        "ref": "refs/tags/v1.73.0",
         "type": "git",
         "url": "https://git.sr.ht/~ninjapanzer/burl"
       }
@@ -357,6 +359,23 @@
         "type": "sourcehut"
       }
     },
+    "kwik-e-mart": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1794150321,
+        "narHash": "sha256-hVD42tVJiLHbqX5PG0z52cgMhkS2eQLUhTVLBbnvY3k=",
+        "ref": "refs/heads/master",
+        "rev": "080e8d158f80e1f2933932efb4121d94465af8af",
+        "revCount": 415,
+        "type": "git",
+        "url": "https://git.sr.ht/~ninjapanzer/kwike"
+      },
+      "original": {
+        "rev": "080e8d158f80e1f2933932efb4121d94465af8af",
+        "type": "git",
+        "url": "https://git.sr.ht/~ninjapanzer/kwike"
+      }
+    },
     "kwike": {
       "inputs": {
         "claude-code-nix": "claude-code-nix_2",
@@ -433,6 +452,23 @@
         "owner": "NixOS",
         "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-buildbox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793410479,
+        "narHash": "sha256-HzgjxrLY4AEc0044ZuM5CHbLSWLZgDlay1idmzvvpJs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fa1373130d5a21c040a47c5dbe1913d59ed91808",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fa1373130d5a21c040a47c5dbe1913d59ed91808",
         "type": "github"
       }
     },

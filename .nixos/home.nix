@@ -150,6 +150,45 @@
     };
   };
 
+  # Trading desk: unattended, read-only Claude runs. The script decides which
+  # tools a run may use; what each run does is a runbook note in the burl
+  # notebook (~/trading/trading-desk.burl, Research > Runbooks).
+  systemd.user.services.desk-morning = {
+    Unit.Description = "Trading desk morning run: dip check and daily report (read-only)";
+    Service = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.bash}/bin/bash %h/trading/bin/desk-run morning";
+      # jq is for the failure note the script writes when a run dies.
+      Environment = [ "PATH=${pkgs.lib.makeBinPath [ pkgs.jq pkgs.coreutils ]}:%h/.nix-profile/bin:/run/current-system/sw/bin" ];
+    };
+  };
+  systemd.user.timers.desk-morning = {
+    Unit.Description = "Trading desk morning run, weekdays 8:27 AM Eastern";
+    Timer = {
+      # Persistent: a run missed while the box was off happens at next start.
+      OnCalendar = "Mon..Fri *-*-* 08:27:00 America/New_York";
+      Persistent = true;
+    };
+    Install.WantedBy = [ "timers.target" ];
+  };
+
+  systemd.user.services.desk-watch = {
+    Unit.Description = "Trading desk trade watch: order status into the burl notebook (read-only)";
+    Service = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.bash}/bin/bash %h/trading/bin/desk-run watch";
+      Environment = [ "PATH=${pkgs.lib.makeBinPath [ pkgs.jq pkgs.coreutils ]}:%h/.nix-profile/bin:/run/current-system/sw/bin" ];
+    };
+  };
+  systemd.user.timers.desk-watch = {
+    Unit.Description = "Trading desk trade watch, weekdays hourly during market hours (Eastern)";
+    Timer = {
+      # Not persistent: a missed hourly check is not worth running late.
+      OnCalendar = "Mon..Fri *-*-* 09..16:37:00 America/New_York";
+    };
+    Install.WantedBy = [ "timers.target" ];
+  };
+
   # programs.atuin = {
   #   enable = true;
   #   settings = {

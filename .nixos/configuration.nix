@@ -118,7 +118,7 @@
     protocol = "ssh-ng";
     sshKey = "/home/paulscoder/.ssh/buildbox_ed25519";
     system = "x86_64-linux";
-    maxJobs = 32;
+    maxJobs = 8;
     speedFactor = 2;
     supportedFeatures = [ "big-parallel" "benchmark" ];
   }{
@@ -127,7 +127,7 @@
     protocol = "ssh-ng";
     sshKey = "/home/paulscoder/.ssh/deskbox_builder_ed25519";
     system = "x86_64-linux";
-    maxJobs = 2;          # raised once a full peak-RSS run is measured (AC 2)
+    maxJobs = 1;          # raised once a full peak-RSS run is measured (AC 2)
     speedFactor = 4;      # above the buildbox's 2, so nix prefers the desktop
     supportedFeatures = [ "big-parallel" "benchmark" ];
   }];
@@ -215,6 +215,7 @@
   networking.firewall.allowedTCPPorts = [
     8787
     7373
+    7374
   ];
 
   networking.firewall.allowedUDPPorts = [ 5353 ];

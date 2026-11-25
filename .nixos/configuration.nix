@@ -127,7 +127,7 @@
     protocol = "ssh-ng";
     sshKey = "/home/paulscoder/.ssh/deskbox_builder_ed25519";
     system = "x86_64-linux";
-    maxJobs = 1;          # raised once a full peak-RSS run is measured (AC 2)
+    maxJobs = 3;          # raised once a full peak-RSS run is measured (AC 2)
     speedFactor = 4;      # above the buildbox's 2, so nix prefers the desktop
     supportedFeatures = [ "big-parallel" "benchmark" ];
   }];
